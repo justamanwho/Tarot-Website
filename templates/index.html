@@ -1,7 +1,52 @@
 {% extends "base.html" %}
 
-
 {% block content %}
-<h1>Hello...</h1>
-{% endblock %}
+<div class="container">
+    <div class="left-panel">
+<!--        <img src="../static/alina.png" alt="Alina Tarot Therapy Logo" class="logo">-->
+        <h1>ALINA TAROT ASTRO LOVE PSYCHOLOGY ESOTERIC</h1>
+        <p class="ukrainian-text">Допомагаю дізнатись істини, які є всередині вас</p>
+        <p class="english-text">Helping you to reach the future that you already have inside you</p>
+    </div>
+    <div class="right-panel">
+        <nav class="navigation">
+            <ul>
+                <li><a href="#services">SERVICES | ПОСЛУГИ</a></li>
+                <li><a href="#important">IMPORTANT | ВАЖЛИВО</a></li>
+                <li><a href="#feedback">FEEDBACK | ВІДГУКИ</a></li>
+            </ul>
+        </nav>
+        <div class="social-media">
+            <a href="#"><img src="../static/telegram.svg" alt="Telegram"></a>
+            <a href="#"><img src="../static/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="../static/whatsapp.svg" alt="WhatsApp"></a>
+        </div>
+    </div>
+</div>
 
+<div id="services" class="services-section">
+    <div class="header">
+        <h1>SERVICES</h1>
+        <h2>ПОСЛУГИ</h2>
+    </div>
+    <div class="services-buttons">
+        <a href="#" class="service-btn">TAROT READINGS<br>РОЗКЛАДИ</a>
+        <a href="#" class="service-btn">VIDEO CALL<br>ВІДЕОДЗВІНОК</a>
+        <a href="#" class="service-btn">QUICK MESSAGE<br>ПОСЛАННЯ ДЛЯ ВАС</a>
+        <a href="#" class="service-btn">YOUR QUESTIONS<br>ВАШІ ПИТАННЯ</a>
+        <a href="#" class="service-btn">COMPATIBILITY ASTRO<br>АСТРО СУМІСНІСТЬ</a>
+    </div>
+    <div class="instructions">
+        <p>Choose an option you prefer and text me in Telegram or WhatsApp</p>
+        <p>Оберіть послугу, яка Вас цікавить і напишіть мені в Телеграм або Вотсап</p>
+    </div>
+    <div class="contact-icons">
+        <a href="https://telegram.org" target="_blank">
+            <img src="../static/telegram.svg" alt="Telegram">
+        </a>
+        <a href="https://whatsapp.com" target="_blank">
+            <img src="../static/whatsapp.svg" alt="WhatsApp">
+        </a>
+    </div>
+</div>
+{% endblock %}

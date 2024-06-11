@@ -17,3 +17,7 @@ def about():
 @app.route('/contacts', methods=['GET'])
 def contacts():
     return render_template('contacts.html')
+
+
+if __name__ == '__main__':
+    app.run(debug=False)
