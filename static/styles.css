@@ -1,52 +1,84 @@
-/* Existing styles */
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
 
+/* Existing styles */
 body {
     font-family: 'Merienda', cursive;
-    margin: 0;
-    padding: 0;
+    margin: 2;
+    padding: 2;
     display: flex;
-    flex-direction: column; /* Changed to column to stack content */
+    flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background-color: #220007; /* Updated background color */
+    background-color: #220007;
 }
 
 .container {
     display: flex;
-    flex-direction: row; /* Row for main container layout */
+    flex-direction: row;
     width: 80%;
     max-width: 1200px;
-    background-color: #220007; /* Updated background color */
+    background-color: #220007;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px; /* Added margin to separate sections */
+    margin-bottom: 40px;
     border-radius: 10px;
+    padding-top: 100px;
 }
 
 .left-panel, .right-panel {
-    padding: 20px;
+    padding: 10px;
     display: flex;
-    flex-direction: column; /* Added to align content vertically */
-    justify-content: center; /* Center content vertically */
+    flex-direction: column;
 }
 
 .left-panel {
-    width: 50%;
-    text-align: center;
+    width: 40%;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 20px;
+}
+
+.logo-text-container {
+    display: flex;
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
 }
 
 .logo {
-    max-width: 100px;
-    border-radius: 50%;
-    margin: 0 auto; /* Center logo horizontally */
+    width: 100px; /* Adjusted logo size */
+    height: auto;
+    margin-right: 10px; /* Space between text and logo */
 }
 
-.ukrainian-text, .english-text {
+.title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the right */
+}
+
+.title-text h2 {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    text-align: left; /* Ensure text alignment is left */
+}
+
+.instructions {
     margin: 20px 0;
+    text-align: center; /* Center instructions text */
 }
 
 .right-panel {
     width: 50%;
+    margin-top: 20px; /* Adjust margin to separate panels */
 }
 
 .navigation ul {
@@ -61,13 +93,13 @@ body {
 
 .navigation ul li a {
     text-decoration: none;
-    color: #fff; /* Updated color for better contrast */
-    border: 1px solid #fff; /* Updated border color */
+    color: #fff;
+    border: 1px solid #fff;
     padding: 10px 20px;
     display: block;
     text-align: center;
     transition: background-color 0.3s, color 0.3s;
-    border-radius: 10px; /* Added border radius */
+    border-radius: 10px;
 }
 
 .navigation ul li a:hover {
@@ -87,29 +119,29 @@ body {
 }
 
 /* New styles for Services Page */
-
 .services-section {
     text-align: center;
     padding: 50px 20px;
-    background: #220007; /* Match the background color */
-    color: #e3bfc0;
-    border-radius: 10px; /* Matching border radius */
-    margin: 0 auto 40px auto; /* Center and space from previous content */
+    background: #220007;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin: 0 auto 40px auto;
     width: 80%;
-    max-width: 1200px;
+    max-width: 700px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .header h1 {
     font-size: 3rem;
     margin: 10px 0;
-    color: #e3bfc0;
+    color: #e3bfc0; /* Color for "SERVICES" */
 }
 
 .header h2 {
-    font-size: 2rem;
+    font-size: 2rem; /* Adjusted font size for "ПОСЛУГИ" */
     margin: 10px 0;
-    color: #e3bfc0;
+    color: #e3bfc0; /* Original color for "ПОСЛУГИ" */
+    font-family: 'Merienda', cursive; /* Ensure consistent font */
 }
 
 .services-buttons {
@@ -157,4 +189,85 @@ body {
 
 .contact-icons img:hover {
     transform: scale(1.1);
+}
+
+/* Tarot Reading */
+.tarot-reading {
+    text-align: center;
+    padding: 50px 20px;
+    background: #4a0010; /* Match your site's theme */
+    color: #f5e6e8;
+    border-radius: 10px;
+    margin: 0 auto 40px auto;
+    width: 80%;
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tarot-title h1, .tarot-title h2 {
+    margin: 10px 0;
+    font-family: 'Merienda', cursive;
+}
+
+.tarot-title h1 {
+    font-size: 3rem;
+    color: #e3bfc0;
+}
+
+.tarot-title h2 {
+    font-size: 2rem;
+    color: #e3bfc0;
+}
+
+.category-title h2 {
+    margin: 10px 0;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.tarot-reading .instructions {
+    text-align: left;
+}
+
+.tarot-reading .instructions ol {
+    list-style: none;
+    padding: 0;
+}
+
+.tarot-reading .instructions ol li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.tarot-reading .instructions p {
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.tarot-reading .pricing h2 {
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #f5e6e8;
+}
+
+/* Media Queries */
+@media (max-width: 550px) {
+    .right-panel {
+        margin-top: 130px; /* Ensure right panel does not overlap */
+    }
+
+    .logo {
+        margin-left: 130px;
+    }
+
+    .left-panel {
+        width: 50%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .container {
+        padding-top: 20px;
+    }
+
 }

@@ -3,17 +3,27 @@
 {% block content %}
 <div class="container">
     <div class="left-panel">
-        <img src="../static/alina-logo.jpg" alt="Alina Tarot Therapy Logo" class="logo">
-        <h1>ALINA TAROT ASTRO LOVE PSYCHOLOGY ESOTERIC</h1>
-        <p>Helping you to reach the future that you already have inside you</p>
-        <p>Допомагаю дізнатись істини, які є всередині вас</p>
+        <div class="logo-text-container">
+            <img src="../static/alina-logo.jpg" alt="Alina Tarot Therapy Logo" class="logo">
+            <div class="title-text">
+                <h2>ALINA</h2>
+                <h2>TAROT</h2>
+                <h2>ASTRO</h2>
+                <h2>LOVE</h2>
+                <h2>PSYCHOLOGY</h2>
+            </div>
+        </div>
+        <div class="instructions">
+            <p>Helping you to reach the truth that you already have inside you</p>
+        </div>
     </div>
+
     <div class="right-panel">
         <nav class="navigation">
             <ul>
-                <li><a href="#services">SERVICES | ПОСЛУГИ</a></li>
-                <li><a href="#important">IMPORTANT | ВАЖЛИВО</a></li>
-                <li><a href="#feedback">FEEDBACK | ВІДГУКИ</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#important">IMPORTANT</a></li>
+                <li><a href="#feedback">FEEDBACK</a></li>
             </ul>
         </nav>
         <div class="social-media">
@@ -29,18 +39,16 @@
 <div id="services" class="services-section">
     <div class="header">
         <h1>SERVICES</h1>
-        <h2>ПОСЛУГИ</h2>
     </div>
     <div class="services-buttons">
-        <a href="#" class="service-btn">TAROT READINGS<br>РОЗКЛАДИ</a>
-        <a href="#" class="service-btn">VIDEO CALL<br>ВІДЕОДЗВІНОК</a>
-        <a href="#" class="service-btn">QUICK MESSAGE<br>ПОСЛАННЯ ДЛЯ ВАС</a>
-        <a href="#" class="service-btn">YOUR QUESTIONS<br>ВАШІ ПИТАННЯ</a>
-        <a href="#" class="service-btn">COMPATIBILITY ASTRO<br>АСТРО СУМІСНІСТЬ</a>
+        <a href="#" class="service-btn">TAROT READINGS</a>
+        <a href="#" class="service-btn">VIDEO CALL</a>
+        <a href="#" class="service-btn">QUICK MESSAGE</a>
+        <a href="#" class="service-btn">YOUR QUESTIONS</a>
+        <a href="#" class="service-btn">COMPATIBILITY ASTRO</a>
     </div>
     <div class="instructions">
         <p>Choose an option you prefer and text me in Telegram or WhatsApp</p>
-        <p>Оберіть послугу, яка Вас цікавить і напишіть мені в Телеграм або Вотсап</p>
     </div>
     <div class="contact-icons">
         <a href="https://t.me/sixamprincess" target="_blank">
@@ -51,4 +59,33 @@
         </a>
     </div>
 </div>
+
+<div id="tarot-reading" class="tarot-reading">
+    <div class="tarot-title">
+        <h1>TAROT READINGS</h1>
+    </div>
+    <div class="category-title">
+        <h2>| General |</h2>
+        <h2>WHAT'S COMING SOON</h2>
+        <h2>during: 1 week/1/2/3 months</h2>
+    </div>
+    <div class="instructions">
+        <ol>
+            <li>How your Reality will look like during this period in general</li>
+            <li>What this period is favourable for</li>
+            <li>Important situations and changes</li>
+        </ol>
+        <p>+ 2 questions from you</p>
+        <p>for example</p>
+        <ol>
+            <li>How will my relationships with *name* change during this time?</li>
+            <li>How will my financial situation look like?</li>
+        </ol>
+    </div>
+    <div class="pricing">
+        <h2>$30 (usd)</h2>
+    </div>
+</div>
+
+
 {% endblock %}
