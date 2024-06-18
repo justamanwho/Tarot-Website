@@ -192,63 +192,9 @@ body {
 }
 
 /* Tarot Reading */
-.tarot-reading {
-    text-align: center;
-    padding: 50px 20px;
-    background: #4a0010; /* Match your site's theme */
-    color: #f5e6e8;
-    border-radius: 10px;
-    margin: 0 auto 40px auto;
-    width: 80%;
-    max-width: 1200px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-.tarot-title h1, .tarot-title h2 {
-    margin: 10px 0;
-    font-family: 'Merienda', cursive;
-}
 
-.tarot-title h1 {
-    font-size: 3rem;
-    color: #e3bfc0;
-}
 
-.tarot-title h2 {
-    font-size: 2rem;
-    color: #e3bfc0;
-}
-
-.category-title h2 {
-    margin: 10px 0;
-    color: #fff;
-    font-size: 1.5rem;
-}
-
-.tarot-reading .instructions {
-    text-align: left;
-}
-
-.tarot-reading .instructions ol {
-    list-style: none;
-    padding: 0;
-}
-
-.tarot-reading .instructions ol li {
-    margin: 10px 0;
-    font-size: 1.2rem;
-}
-
-.tarot-reading .instructions p {
-    margin: 10px 0;
-    font-style: italic;
-}
-
-.tarot-reading .pricing h2 {
-    margin: 20px 0;
-    font-size: 2rem;
-    color: #f5e6e8;
-}
 
 /* Media Queries */
 @media (max-width: 550px) {
