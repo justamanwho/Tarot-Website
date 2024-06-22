@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
+
 <div class="container">
+    <div class="fixed-right-corner">
+        <h4>ENG<br>УКР<br>PL<br>РУС</h4>
+    </div>
     <div class="left-panel">
         <div class="logo-text-container">
             <img src="../static/alina-logo.jpg" alt="Alina Tarot Therapy Logo" class="logo">
             <div class="title-text">
-                <h2>ALINA</h2>
-                <h2>TAROT</h2>
-                <h2>ASTRO</h2>
-                <h2>LOVE</h2>
-                <h2>PSYCHOLOGY</h2>
+                <h2>ALINA<br>TAROT<br>ASTRO<br>LOVE<br>PSYCHOLOGY</h2>
             </div>
         </div>
         <div class="instructions">
@@ -27,7 +27,7 @@
             </ul>
         </nav>
         <div class="social-media">
-            <a href="https://t.me/vidvertoprotaro" target="_blank"><img src="../static/telegram.svg" alt="Telegram"></a>
+            <a href="https://t.me/sixamprincess" target="_blank"><img src="../static/telegram.svg" alt="Telegram"></a>
             <a href="https://www.instagram.com/sixamprincess?igsh=MWw3Y2J4NWYyZ2xhYg%3D%3D&utm_source=qr" target="_blank">
                 <img src="../static/instagram.svg" alt="Instagram">
             </a>
@@ -37,15 +37,16 @@
 </div>
 
 
+
 <div id="services" class="services-section">
     <div class="header">
         <h1>SERVICES</h1>
     </div>
     <div class="services-buttons">
-        <a href="#tarot-reading" class="service-btn">TAROT READINGS</a>
+        <a href="#tarot-readings" class="service-btn">TAROT READINGS</a>
         <a href="#video-call" class="service-btn">VIDEO CALL</a>
+        <a href="#your-questions" class="service-btn">YOUR QUESTIONS</a>
         <a href="#quick-message" class="service-btn">QUICK MESSAGE</a>
-        <a href="#your-question" class="service-btn">YOUR QUESTIONS</a>
         <a href="#compatibility-astro" class="service-btn">COMPATIBILITY ASTRO</a>
     </div>
     <div class="instructions">
@@ -61,18 +62,19 @@
     </div>
 </div>
 
-<div class="header">
-    <h1>TAROT READINGS</h1>
-</div>
 
-<div id="tarot-reading" class="tarot-reading-section">
+
+<div class="tarot-reading-section">
+    <div class="header" id="tarot-readings">
+        <h1>TAROT READINGS</h1>
+    </div>
 
     <!--- 1 General --->
     <div id="tarot-reading-1" class="tarot-reading-tab" style="background-image: url('../static/background.jpg');">
-        <div>
+        <div class="gold-header">
             <h2>| General |</h2>
             <h2>WHAT'S COMING SOON</h2>
-            <h2>during: 1 week/1/2/3 months</h2>
+            <h2>during: 1 week/1/2/3 months<br><br></h2>
         </div>
         <div class="instructions">
             <ol>
@@ -82,12 +84,12 @@
             </ol>
             <p>+ 2 questions from you</p>
             <p>for example</p>
-            <ol>
+            <ul>
                 <li>How will my relationships with *name* change during this time?</li>
                 <li>How will my financial situation look like?</li>
-            </ol>
+            </ul>
         </div>
-        <div>
+        <div class="gold-header">
             <h2>$30 (usd)</h2>
         </div>
     </div>
@@ -95,10 +97,10 @@
 
     <!--- 2 Your In Search of Harmony --->
     <div id="tarot-reading-2" class="tarot-reading-tab" style="background-image: url('../static/background.jpg');">
-        <div>
+        <div class="gold-header">
         <h2>| In Search of Harmony |</h2>
         <h2>HOW TO IMPROVE YOUR REALITY</h2>
-        <h2>for those who feel lost</h2>
+        <h2>for those who feel lost<br><br></h2>
     </div>
         <div class="instructions">
         <ol>
@@ -109,7 +111,7 @@
             <li>What you should do to start living the best option of reality</li>
         </ol>
         </div>
-        <div>
+        <div class="gold-header">
             <h2>$30 (usd)</h2>
         </div>
     </div>
@@ -117,10 +119,10 @@
 
     <!--- 3 Your Strength --->
     <div id="tarot-reading-3" class="tarot-reading-tab" style="background-image: url('../static/background.jpg');">
-        <div>
+        <div class="gold-header">
             <h2>| Your Strength |</h2>
             <h2>WHAT ARE YOUR STRENGTHS</h2>
-            <h2>hidden talents and skills</h2>
+            <h2>hidden talents and skills<br><br></h2>
         </div>
             <div class="instructions">
             <ol>
@@ -131,7 +133,7 @@
                 <li>What you can achieve developing them </li>
             </ol>
         </div>
-        <div>
+        <div class="gold-header">
             <h2>$30 (usd)</h2>
         </div>
     </div>
@@ -139,9 +141,9 @@
 
     <!--- 4 Finance --->
     <div id="tarot-reading-4" class="tarot-reading-tab" style="background-image: url('../static/background.jpg');">
-        <div>
+        <div class="gold-header">
             <h2>| Finance |</h2>
-            <h2>HOW TO IMPROVE YOUR FINANCIAL SITUATION</h2>
+            <h2>HOW TO IMPROVE YOUR FINANCIAL SITUATION<br><br></h2>
         </div>
             <div class="instructions">
             <ol>
@@ -152,7 +154,7 @@
                 <li>How huge can be the difference in your financial situation when you start working on it</li>
             </ol>
         </div>
-        <div>
+        <div class="gold-header">
             <h2>$30 (usd)</h2>
         </div>
     </div>
@@ -160,10 +162,10 @@
 
     <!--- 5 Love --->
     <div id="tarot-reading-5" class="tarot-reading-tab" style="background-image: url('../static/background.jpg');">
-        <div>
+        <div class="gold-header">
             <h2>| Love |</h2>
             <h2>NEW PARTNER</h2>
-            <h2>Checking your compatibility with a person you know</h2>
+            <h2>Checking your compatibility with a person you know<br><br></h2>
         </div>
             <div class="instructions">
             <ol>
@@ -174,18 +176,23 @@
                 <li>How your relationships will be developing</li>
             </ol>
         </div>
-        <div>
+        <div class="gold-header">
             <h2>$30 (usd)</h2>
         </div>
     </div>
 
 
+    <div id="brook-image" class="brook-image">
+        <img src="../static/brook.png" alt="Brook">
+    </div>
+
+
     <!--- 6 Love --->
     <div id="tarot-reading-6" class="tarot-reading-tab" style="background-image: url('../static/background.jpg');">
-        <div>
+        <div class="gold-header">
             <h2>| Love |</h2>
             <h2>YOUR CURRENT RELATIONSHIPS</h2>
-            <h2>if there are any misunderstandings between you</h2>
+            <h2>if there are any misunderstandings between you<br><br></h2>
         </div>
             <div class="instructions">
             <ol>
@@ -197,12 +204,96 @@
                 <li>What this person will bring to you and how your relationships will be developing</li>
             </ol>
         </div>
-        <div>
+        <div class="gold-header">
             <h2>$30 (usd)</h2>
         </div>
     </div>
-
 </div>
 
 
+
+<div class="ordinary-panel">
+    <div class="header" id="video-call">
+        <h1>VIDEO CALL</h1>
+    </div>
+    <div class="header">
+        <h2>ONE HOUR OF VIDEOCALL = UNLIMITED AMOUNT OF QUESTIONS</h2>
+    </div>
+    <div class="instructions">
+        <p>
+            Videocall is a perfect format for those who feel the need to speak up about their situation,
+            since it gives you the opportunity
+            to ask way more questions than you have prepared, as
+            they will be appearing during the talk. I am interested
+            in helping you to leave satisfied and get the answers on
+            your questions.
+            I recommend you to prepare your questions beforehand and
+            message me describing your situation, so we can save our time
+        </p>
+    </div>
+    <div class="gold-header">
+        <h2>$85 (usd)</h2>
+    </div>
+</div>
+
+
+
+<div class="ordinary-panel">
+    <div class="header" id="your-questions">
+        <h1>YOUR QUESTIONS</h1>
+    </div>
+    <div class="question-container">
+        <div class="left-question-panel">
+            <div class="header">
+                <h2>One Question from You</h2>
+            </div>
+            <div class="gold-header">
+                <h2>$6 (usd)</h2>
+            </div>
+        </div>
+        <div class="right-question-panel">
+            <div class="header">
+                <h2>Minimum 3 Questions</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="instructions-navigation">
+        <nav class="navigation">
+            <ul>
+                <li><a href="#important">IMPORTANT</a></li>
+            </ul>
+        </nav>
+        <div class="instructions">
+            <p>Please read more information here<br>(what types of questions I don’t work with & what information I need from you)</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="ordinary-panel" id="quick-message">
+    <div class="header">
+        <h1>MESSAGE FOR YOU</h1>
+    </div>
+    <h1>Something you should know on your current life path</h1>
+</div>
+
+
+<div class="ordinary-panel" id="compatibility-astro">
+    <div class="header">
+        <h1>SYNASTRY: ASTROLOGY</h1>
+    </div>
+    <div class="gold-header">
+        <p>Checking a compatibility with your partner using your astrological charts
+            (date of birth, exact place of birth and exact time of birth needed)</p>
+        <p>$85 (usd)</p>
+    </div>
+
+</div>
 {% endblock %}

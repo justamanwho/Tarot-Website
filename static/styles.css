@@ -27,6 +27,21 @@ body {
     padding-top: 100px;
 }
 
+.question-container {
+    display: flex;
+    justify-content: space-between; /* Ensure space between the two panels */
+    width: 50%; /* Full width of the parent container */
+    padding: 20px; /* Add padding if necessary */
+}
+
+.fixed-right-corner {
+    position: absolute;
+    top: -5px;
+    right: 15px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
 .left-panel, .right-panel {
     padding: 10px;
     display: flex;
@@ -45,6 +60,39 @@ body {
     padding-right: 20px;
 }
 
+.right-panel {
+    width: 50%;
+    margin-top: 20px; /* Adjust margin to separate panels */
+}
+
+.left-question-panel, .right-question-panel {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.left-question-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.right-question-panel {
+    margin-top: 35px;
+}
+
+.ordinary-panel {
+    width: 90%;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
 .logo-text-container {
     display: flex;
     align-items: center; /* Center items horizontally */
@@ -57,10 +105,15 @@ body {
     margin-right: 10px; /* Space between text and logo */
 }
 
+.gold-header {
+    color: #FFEA20;
+}
+
 .title-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Align text to the right */
+    color: #FFFFFF;
 }
 
 .title-text h2 {
@@ -74,11 +127,11 @@ body {
 .instructions {
     margin: 20px 0;
     text-align: center; /* Center instructions text */
+    color: #FFFFFF;
 }
 
-.right-panel {
-    width: 50%;
-    margin-top: 20px; /* Adjust margin to separate panels */
+.instructions-navigation {
+    margin-top: 50px;
 }
 
 .navigation ul {
@@ -131,17 +184,23 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
 .header h1 {
     font-size: 3rem;
     margin: 10px 0;
-    color: #e3bfc0; /* Color for "SERVICES" */
-}
-
-.header h2 {
-    font-size: 2rem; /* Adjusted font size for "ПОСЛУГИ" */
-    margin: 10px 0;
-    color: #e3bfc0; /* Original color for "ПОСЛУГИ" */
-    font-family: 'Merienda', cursive; /* Ensure consistent font */
+    color: #e3bfc0;
 }
 
 .services-buttons {
@@ -193,33 +252,58 @@ body {
 
 /* Tarot Reading */
 .tarot-reading-section {
+    margin: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; /* Adjust spacing between tabs */
 }
 
 .tarot-reading-tab {
-    width: calc(33% - 40px); /* Adjust width of each tab based on desired spacing */
-    margin: 20px; /* Adjust margin between tabs */
-    padding: 20px;
+    width: calc(20% - 40px); /* Adjust width of each tab based on desired spacing */
+    margin: 10px; /* Adjust margin between tabs */
+    padding: 30px;
     color: #fff;
     text-align: center;
-    border-radius: 10px;
-    background-repeat: repeat;
-    background-position: center;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.brook-image {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.brook-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 
-
 /* Media Queries */
-@media (max-width: 768px) {
-    .tarot-reading-tab {
-        width: calc(50% - 40px); /* Single tab per row on very small screens */
+@media (max-width: 1400px) {
+    .question-container {
+        width: 70%;
     }
 }
 
 
-@media (max-width: 550px) {
+@media (max-width: 1200px) {
+    .tarot-reading-tab {
+        width: calc(50% - 40px); /* Single tab per row on very small screens */
+    }
+    .brook-image {
+        display: none;
+    }
+    .question-container {
+        width: 80%;
+    }
+
+}
+
+
+@media (max-width: 650px) {
     .right-panel {
         margin-top: 130px; /* Ensure right panel does not overlap */
     }
@@ -238,7 +322,15 @@ body {
         padding-top: 20px;
     }
 
+    .header h1{
+        word-break: break-word;
+    }
+
     .tarot-reading-tab {
         width: calc(100% - 40px); /* Two tabs per row on smaller screens */
     }
+    .question-container {
+        width: 90%;
+    }
+
 }
