@@ -4,7 +4,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Existing styles */
 body {
     font-family: 'Playfair Display', serif;
     font-optical-sizing: auto;
@@ -34,23 +33,23 @@ body {
 
 .question-container {
     display: flex;
-    justify-content: space-between; /* Ensure space between the two panels */
-    width: 50%; /* Full width of the parent container */
-    padding: 20px; /* Add padding if necessary */
+    justify-content: space-between;
+    width: 50%;
+    padding: 20px;
 }
 
 .message-container {
     display: flex;
-    justify-content: space-between; /* Ensure space between the two panels */
-    width: 70%; /* Full width of the parent container */
-    padding: 20px; /* Add padding if necessary */
+    justify-content: space-between;
+    width: 70%;
+    padding: 20px;
 }
 
 .compatibility-astro-container {
     display: flex;
-    justify-content: space-between; /* Ensure space between the two panels */
-    width: 50%; /* Full width of the parent container */
-    padding: 10px; /* Add padding if necessary */
+    justify-content: space-between;
+    width: 50%;
+    padding: 10px;
 }
 
 .fixed-right-corner {
@@ -72,8 +71,8 @@ body {
     color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    justify-content: center;
+    align-items: center;
     padding-top: 20px;
     padding-left: 100px;
     padding-right: 20px;
@@ -81,7 +80,7 @@ body {
 
 .right-panel {
     width: 50%;
-    margin-top: 20px; /* Adjust margin to separate panels */
+    margin-top: 20px;
 }
 
 .left-question-panel, .right-question-panel {
@@ -111,8 +110,8 @@ body {
 .left-message-panel {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
@@ -132,79 +131,80 @@ body {
 .left-compatibility-astro-panel {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 #your-questions {
-    background-image: url('../static/questions_background.png'); /* Ensure the correct path */
+    background-image: url('../static/questions_background.png');
     background-size: cover; /* Make the image cover the section */
     background-repeat: no-repeat;
     background-position: center;
-    padding: 20px; /* Adjust padding as needed */
-    border-radius: 10px; /* Optional: Add some border-radius if desired */
+    padding: 20px;
+    border-radius: 10px;
     width: 100%;
-    height: auto; /* Adjust height to auto */
-    box-sizing: border-box; /* Ensure padding is included in the height */
+    height: auto;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    justify-content: center;
+    align-items: center;
 }
 
-/* Ensure the text is readable over the background */
+
 #your-questions .header h1 {
     color: #FFFFFF;
 },
+
 #your-questions .gold-header {
     padding: 0;
     border-radius: 0;
-    background-color: transparent; /* Make background transparent */
+    background-color: transparent;
 }
 
 
 .compatibility-astro-background {
-    background-image: url('../static/brook_pink_background.png'); /* Ensure the correct path */
-    background-size: cover; /* Make the image cover the section */
+    background-image: url('../static/brook_pink_background.png');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 20px; /* Adjust padding as needed */
-    border-radius: 10px; /* Optional: Add some border-radius if desired */
+    padding: 20px;
+    border-radius: 10px;
     width: 100%;
-    height: auto; /* Adjust height to auto */
-    box-sizing: border-box; /* Ensure padding is included in the height */
+    height: auto;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    justify-content: center;
+    align-items: center;
 }
 
-/* Ensure the text is readable over the background */
+
 .compatibility-astro-background .header h1 {
     color: #FFFFFF;
 },
 .compatibility-astro-background .gold-header {
     padding: 0;
     border-radius: 0;
-    background-color: transparent; /* Make background transparent */
+    background-color: transparent;
 }
 
 .compatibility-astro-text-background {
-    background-image: url('../static/compatibility_astro_background.png'); /* Ensure the correct path */
-    background-size: cover; /* Make the image cover the section */
+    background-image: url('../static/compatibility_astro_background.png');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 5px; /* Adjust padding as needed */
-    border-radius: 10px; /* Optional: Add some border-radius if desired */
+    padding: 5px;
+    border-radius: 10px;
     width: 100%;
-    height: auto; /* Adjust height to auto */
-    box-sizing: border-box; /* Ensure padding is included in the height */
+    height: auto;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    justify-content: center;
+    align-items: center;
 }
 
 .ordinary-panel {
@@ -289,8 +289,8 @@ body {
 
 .important-panel .header h1 {
     font-size: 2.5rem;
-    color: black; /* Change text color to white for contrast */
-    background: white; /* Red to lighter red gradient */
+    color: black; /* Change text color to black for contrast */
+    background: white; /* White background for black header (very beautiful) */
     padding: 10px;
     border-radius: 25px;
     margin-bottom: 20px;
@@ -333,14 +333,14 @@ body {
 
 .logo-text-container {
     display: flex;
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Center text */
+    align-items: center;
+    text-align: center;
 }
 
 .logo {
-    width: 100px; /* Adjusted logo size */
+    width: 100px;
     height: auto;
-    margin-right: 10px; /* Space between text and logo */
+    margin-right: 10px;
 }
 
 .gold-header {
@@ -350,7 +350,7 @@ body {
 .title-text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align text to the right */
+    align-items: flex-start;
 }
 
 .title-text h2 {
@@ -358,12 +358,12 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1;
-    text-align: left; /* Ensure text alignment is left */
+    text-align: left;
 }
 
 .instructions {
     margin: 20px 0;
-    text-align: center; /* Center instructions text */
+    text-align: center;
 }
 
 .instructions ul {
@@ -420,7 +420,6 @@ body {
     height: 24px;
 }
 
-/* New styles for Services Page */
 .services-section {
     text-align: center;
     padding: 50px 20px;
@@ -521,7 +520,7 @@ body {
 }
 
 .astrology-list ul li {
-    margin-bottom: 10px; /* Adjust the value to increase or decrease spacing */
+    margin-bottom: 10px;
 }
 
 .astrology-header h1 {
@@ -537,12 +536,12 @@ body {
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Adjust spacing between tabs */
+    justify-content: space-around;
 }
 
 .tarot-reading-tab {
     width: calc(20% - 40px); /* Adjust width of each tab based on desired spacing */
-    margin: 10px; /* Adjust margin between tabs */
+    margin: 10px;
     padding: 30px;
     text-align: center;
     border-radius: 75px;
@@ -562,7 +561,7 @@ body {
 }
 
 
-/* Media Queries */
+/* Media */
 @media (max-width: 1400px) {
     .question-container {
         width: 70%;
@@ -589,9 +588,9 @@ body {
 
     .message-container {
         display: flex;
-        justify-content: space-between; /* Ensure space between the two panels */
-        width: 90%; /* Full width of the parent container */
-        padding: 20px; /* Add padding if necessary */
+        justify-content: space-between;
+        width: 90%;
+        padding: 20px;
     }
 
     .conclusion-panel {
@@ -602,7 +601,7 @@ body {
 
 @media (max-width: 650px) {
     .right-panel {
-        margin-top: 130px; /* Ensure right panel does not overlap */
+        margin-top: 130px;
     }
 
     .logo {
@@ -624,7 +623,7 @@ body {
     }
 
     .tarot-reading-tab {
-        width: calc(100% - 40px); /* Two tabs per row on smaller screens */
+        width: calc(100% - 40px);
     }
     .question-container {
         width: 90%;
@@ -652,11 +651,11 @@ body {
 
     .left-compatibility-astro-panel {
         padding: 3px;
-        width: 100%; /* Ensure it takes full width */
+        width: 100%;
     }
 
     .right-compatibility-astro-panel {
-        width: 96%; /* Ensure it takes full width */
+        width: 96%;
     }
 
     .compatibility-astro-panel {
