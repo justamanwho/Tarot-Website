@@ -1,0 +1,139 @@
+{
+  "title": "Helping you to reach the truth that you already have inside you",
+
+  "services": {
+      "services": "SERVICES",
+      "tarot-readings": "TAROT READINGS",
+      "important":  "IMPORTANT",
+      "video-call": "VIDEO CALL",
+      "your-questions": "YOUR QUESTIONS",
+      "quick-message": "QUICK MESSAGE",
+      "compatibility-astro": "COMPATIBILITY ASTRO",
+      "description": "Choose an option you prefer and text me in Telegram or WhatsApp"
+  },
+
+  "nav-tarot-readings": {
+    "general": {
+      "title1": "| General |",
+      "title2": "WHAT'S COMING SOON",
+      "title3": "during: 1 week/1/2/3 months",
+      "1": "How your Reality will look like during this period in general",
+      "2": "What this period is favourable for",
+      "3": "Important situations and changes",
+      "4": "+ 2 questions from you",
+      "5": "for example",
+      "6": "How will my relationships with *name* change during this time?",
+      "7": "How will my financial situation look like?",
+      "price": "$25 (usd)"
+    },
+    "harmony": {
+      "title1": "| In Search of Harmony |",
+      "title2": "HOW TO IMPROVE YOUR REALITY",
+      "title3": "for those who feel lost",
+      "1": "How your reality looks like now",
+      "2": "What the reason of your current mental state is",
+      "3": "What can make you feel better",
+      "4": "How the best option of your reality looks like",
+      "5": "What you should do to start living the best option of reality",
+      "price": "$25 (usd)"
+    },
+    "strength": {
+      "title1": "| Your Strength |",
+      "title2": "WHAT ARE YOUR STRENGTHS",
+      "title3": "hidden talents and skills",
+      "1": "What your energy is right now",
+      "2": "Your biggest strength in general",
+      "3": "Which skills will help you the most on your current life path",
+      "4": "Your hidden talents/skills",
+      "5": "What you can achieve developing them",
+      "price": "$25 (usd)"
+    },
+    "finance": {
+      "title1": "| Finance |",
+      "title2": "HOW TO IMPROVE YOUR FINANCIAL SITUATION",
+      "1": "Current financial situation",
+      "2": "What your main mental blocks are that don’t let you improve your financial situation",
+      "3": "External factors that negatively affect your financial situation",
+      "4": "What can help you to attract money into your life",
+      "5": "How huge can be the difference in your financial situation when you start working on it",
+      "price": "$25 (usd)"
+    },
+    "love1": {
+      "title1": "| Love |",
+      "title2": "NEW PARTNER",
+      "title3": "Checking your compatibility with a person you know",
+      "1": "His personality. what you should know about him",
+      "2": "What he feels to you",
+      "3": "How he sees you and your relationship now",
+      "4": "Why this person appeared in your life(what your karmic lessons are)",
+      "5": "How your relationships will be developing",
+      "price": "$25 (usd)"
+    },
+    "love2": {
+      "title1": "| Love |",
+      "title2": "YOUR CURRENT RELATIONSHIPS",
+      "title3": "if there are any misunderstandings between you",
+      "1": "The situation in your couple right now",
+      "2": "His intentions towards you",
+      "3": "The real reason of your problems and misunderstandings",
+      "4": "What you can do to make the situation better",
+      "5": "What this person will bring to you and how your relationships will be developing",
+      "price": "$30 (usd)"
+    }
+  },
+  "nav-video-call": {
+    "title": "ONE HOUR OF VIDEOCALL = UNLIMITED AMOUNT OF QUESTIONS",
+    "1": "Videocall is a perfect format for those who feel the need to speak up about their situation, since it gives you the opportunity to ask way more questions than you have prepared, as they will be appearing during the talk. I am interested in helping you to leave satisfied and get the answers on your questions.",
+    "2": "I recommend you to prepare your questions beforehand and message me describing your situation, so we can save our time",
+    "price": "$70 (usd)"
+  },
+  "nav-your-questions": {
+    "title1": "One Question from You",
+    "price": "$5 (usd)",
+    "title2": "Minimum 3 Questions",
+    "suggestion": "Please read more information here<br>(what types of questions I don’t work with & what information I need from you)"
+  },
+  "nav-quick-message": {
+    "title": "Something you should know on your current life path",
+    "1": "One Card – a message from your Higher Self<br><br>One Card – a message from Higher Powers",
+    "2": "From 5 to 10 minutes voice message from me",
+    "price": "$18 (usd)"
+  },
+  "nav-compatibility-astro1": {
+    "title1": "SYNASTRY: ASTROLOGY",
+    "title2": "Checking a compatibility with your partner using your astrological charts (date of birth, exact place of birth and exact time of birth needed)",
+    "price": "$70 (usd)",
+    "instruction": "WHAT YOU GET:",
+    "1": "analysis of two natal charts: needs, interests and values that each of you have, what type of partner you like and what type of partner you choose to marry",
+    "2": "checking a compatibility: what you have in common (which statements, interests, values you have the same), and what your differences are",
+    "3": "which spheres of life you “highlight” for each other and how it happens",
+    "4": "describing the way you change around your partner and the way your partner changes around you",
+    "format": "Format: PDF file"
+  },
+  "nav-compatibility-astro2": {
+    "title1": "SYNASTRY: ASTROLOGY<br>premium",
+    "price": "$90 (usd)",
+    "instruction": "WHAT YOU GET:",
+    "1": "everything that is included in Standard Synastry",
+    "2": "karmic lessons in your couple: how you were connected in your past lives and what impact it has on you now",
+    "3": "the reason you have met in this life (which scenarios you must go through together and why)",
+    "format": "Format: PDF file"
+  },
+  "nav-important": {
+    "disclaimer": "TYPES OF QUESTIONS I DON’T WORK WITH:",
+    "1": "HEALTH",
+    "2": "CHILDREN",
+    "3": "YES/NO",
+    "4": "\"WHEN?\"",
+    "input": "WHAT INFORMATION I NEED FROM YOU:",
+    "input1": "DATE OF BIRTH",
+    "input2": "PHOTO",
+    "input3": "DESCRIPTION OF THE SITUATION",
+    "order": "TO ORDER:"
+  },
+  "nav-conclusion": {
+    "1": "There are multiple options of future, not just one. Thanks to Tarot we can see what’s most likely going to happen and we can get some guidance on how to get to Reality that we want.",
+    "2": "All of the answers are already inside you: this is basically a work with your subconscious. I help you to understand yourself and the situation better.",
+    "the-end": "YOU ARE THE CREATOR OF YOUR LIFE"
+  }
+}

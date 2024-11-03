@@ -1,0 +1,139 @@
+{
+  "title": "Pomagam ci dotrzeć do prawdy, którą już masz w sobie",
+
+  "services": {
+      "services": "USŁUGI",
+      "tarot-readings": "WRÓŻBY TAROTA",
+      "important": "WAŻNE",
+      "video-call": "WIDEO ROZMOWA",
+      "your-questions": "TWOJE PYTANIA",
+      "quick-message": "SZYBKA WIADOMOŚĆ",
+      "compatibility-astro": "KOMPATYBILNOŚĆ ASTRO",
+      "description": "Wybierz preferowaną opcję i napisz do mnie na Telegramie lub WhatsAppie"
+  },
+
+  "nav-tarot-readings": {
+    "general": {
+      "title1": "| Ogólne |",
+      "title2": "CO NADCHODZI",
+      "title3": "w ciągu: 1 tydzień/1/2/3 miesiące",
+      "1": "Jak będzie wyglądała twoja Rzeczywistość w tym okresie",
+      "2": "Do czego ten okres będzie sprzyjał",
+      "3": "Ważne sytuacje i zmiany",
+      "4": "+ 2 pytania od ciebie",
+      "5": "na przykład",
+      "6": "Jak zmienią się moje relacje z *imię* w tym czasie?",
+      "7": "Jak będzie wyglądała moja sytuacja finansowa?",
+      "price": "25 USD"
+    },
+    "harmony": {
+      "title1": "| W Poszukiwaniu Harmonii |",
+      "title2": "JAK POPRAWIĆ SWOJĄ RZECZYWISTOŚĆ",
+      "title3": "dla tych, którzy czują się zagubieni",
+      "1": "Jak wygląda teraz twoja rzeczywistość",
+      "2": "Jaki jest powód twojego obecnego stanu psychicznego",
+      "3": "Co może sprawić, że poczujesz się lepiej",
+      "4": "Jak wygląda najlepsza wersja twojej rzeczywistości",
+      "5": "Co powinieneś zrobić, aby zacząć żyć najlepszą wersją rzeczywistości",
+      "price": "25 USD"
+    },
+    "strength": {
+      "title1": "| Twoja Siła |",
+      "title2": "JAKIE SĄ TWOJE MOCNE STRONY",
+      "title3": "ukryte talenty i umiejętności",
+      "1": "Jaka jest twoja obecna energia",
+      "2": "Twoja największa siła ogólnie",
+      "3": "Które umiejętności najbardziej pomogą ci na obecnej ścieżce życiowej",
+      "4": "Twoje ukryte talenty/umiejętności",
+      "5": "Co możesz osiągnąć, rozwijając je",
+      "price": "25 USD"
+    },
+    "finance": {
+      "title1": "| Finanse |",
+      "title2": "JAK POPRAWIĆ SWOJĄ SYTUACJĘ FINANSOWĄ",
+      "1": "Obecna sytuacja finansowa",
+      "2": "Jakie są twoje główne mentalne blokady, które nie pozwalają ci poprawić swojej sytuacji finansowej",
+      "3": "Czynniki zewnętrzne, które negatywnie wpływają na twoją sytuację finansową",
+      "4": "Co może pomóc ci przyciągnąć pieniądze do swojego życia",
+      "5": "Jakie mogą być zmiany w twojej sytuacji finansowej, gdy zaczniesz nad nią pracować",
+      "price": "25 USD"
+    },
+    "love1": {
+      "title1": "| Miłość |",
+      "title2": "NOWY PARTNER",
+      "title3": "Sprawdzanie kompatybilności z osobą, którą znasz",
+      "1": "Jego osobowość: co powinieneś o nim wiedzieć",
+      "2": "Co on czuje do ciebie",
+      "3": "Jak postrzega cię i waszą relację",
+      "4": "Dlaczego ta osoba pojawiła się w twoim życiu (jakie są twoje karmiczne lekcje)",
+      "5": "Jak będą rozwijać się wasze relacje",
+      "price": "25 USD"
+    },
+    "love2": {
+      "title1": "| Miłość |",
+      "title2": "TWOJE OBECNE RELACJE",
+      "title3": "jeśli występują jakiekolwiek nieporozumienia",
+      "1": "Obecna sytuacja w twojej parze",
+      "2": "Jego zamiary wobec ciebie",
+      "3": "Prawdziwa przyczyna problemów i nieporozumień",
+      "4": "Co możesz zrobić, aby poprawić sytuację",
+      "5": "Co ta osoba wniesie do twojego życia i jak będą rozwijać się wasze relacje",
+      "price": "30 USD"
+    }
+  },
+  "nav-video-call": {
+    "title": "GODZINA WIDEO ROZMOWY = NIEOGRANICZONA ILOŚĆ PYTAŃ",
+    "1": "Wideorozmowa to idealny format dla tych, którzy potrzebują porozmawiać o swojej sytuacji, dając możliwość zadania wielu pytań, które pojawią się w trakcie rozmowy. Zależy mi na tym, abyś poczuł się usatysfakcjonowany i uzyskał odpowiedzi na swoje pytania.",
+    "2": "Zalecam przygotowanie pytań wcześniej i opisanie mi sytuacji, abyśmy mogli zaoszczędzić czas",
+    "price": "70 USD"
+  },
+  "nav-your-questions": {
+    "title1": "Jedno Pytanie od Ciebie",
+    "price": "5 USD",
+    "title2": "Minimum 3 Pytania",
+    "suggestion": "Proszę przeczytać więcej informacji tutaj<br>(jakie typy pytań są wykluczone i jakie informacje są potrzebne)"
+  },
+  "nav-quick-message": {
+    "title": "Coś, co powinieneś wiedzieć na swojej obecnej ścieżce życiowej",
+    "1": "Jedna karta – wiadomość od twojego Wyższego Ja<br><br>Jedna karta – wiadomość od Wyższych Sił",
+    "2": "Od 5 do 10 minut wiadomość głosowa ode mnie",
+    "price": "18 USD"
+  },
+  "nav-compatibility-astro1": {
+    "title1": "SYNASTRIA: ASTROLOGIA",
+    "title2": "Sprawdzanie kompatybilności z twoim partnerem na podstawie wykresów astrologicznych (potrzebna data, dokładne miejsce i czas urodzenia)",
+    "price": "70 USD",
+    "instruction": "CO OTRZYMUJESZ:",
+    "1": "Analiza dwóch wykresów urodzeniowych: potrzeby, zainteresowania i wartości, które posiadacie, preferencje i ideał partnera",
+    "2": "Sprawdzanie zgodności: co macie wspólnego (przekonania, zainteresowania, wartości) i czym się różnicie",
+    "3": "Które obszary życia podkreślacie dla siebie nawzajem i jak to się dzieje",
+    "4": "Opis tego, jak zmieniacie się przy sobie",
+    "format": "Format: plik PDF"
+  },
+  "nav-compatibility-astro2": {
+    "title1": "SYNASTRIA: ASTROLOGIA<br>premium",
+    "price": "90 USD",
+    "instruction": "CO OTRZYMUJESZ:",
+    "1": "Wszystko, co obejmuje Standardowa Synastria",
+    "2": "Karmiczne lekcje w waszej parze: jak byliście związani w przeszłych życiach i jaki to ma wpływ",
+    "3": "Powód, dla którego spotkaliście się w tym życiu (jakie scenariusze musicie przeżyć razem i dlaczego)",
+    "format": "Format: plik PDF"
+  },
+  "nav-important": {
+    "disclaimer": "TYPY PYTAŃ, Z KTÓRYMI NIE PRACUJĘ:",
+    "1": "ZDROWIE",
+    "2": "DZIECI",
+    "3": "TAK/NIE",
+    "4": "\"KIEDY?\"",
+    "input": "JAKIE INFORMACJE POTRZEBUJĘ OD CIEBIE:",
+    "input1": "DATA URODZENIA",
+    "input2": "ZDJĘCIE",
+    "input3": "OPIS SYTUACJI",
+    "order": "JAK ZAMÓWIĆ:"
+  },
+  "nav-conclusion": {
+    "1": "Istnieje wiele opcji przyszłości, nie tylko jedna. Dzięki kartom można wyczuć różne możliwości, ale ich wynik zależy od twojego zachowania i działań. Dlatego twoja przyszłość jest w twoich rękach.",
+    "2": "Moja interpretacja kart i analiza astrologiczna nie jest wyrocznią i absolutną prawdą. Ale mogę obiektywnie powiedzieć, co widzę i jakie możliwości masz przed sobą.",
+    "the-end": "JESTEŚ TWÓRCEM SWOJEGO ŻYCIA"
+  }
+}

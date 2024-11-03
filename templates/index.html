@@ -2,10 +2,52 @@
 
 {% block content %}
 
-<div class="container">
-    <div class="fixed-right-corner">
-        <h4>ENG<br>УКР<br>PL<br>РУС</h4>
+<!-- Fixed Language Button Dropdown -->
+<div class="language-selector">
+    <button class="language-button" onclick="toggleDropdown()">
+        {{ language_options[lang].name }} <span id="arrow" class="arrow">▼</span>
+    </button>
+    <div id="languageDropdown" class="dropdown-content">
+        {% for code, language in language_options.items() %}
+            {% if code != lang %}
+                <a href="{{ url_for('set_language', lang_code=code) }}">
+                    {{ language.name }}
+                </a>
+            {% endif %}
+        {% endfor %}
     </div>
+</div>
+
+<script>
+    function toggleDropdown() {
+        const dropdown = document.getElementById("languageDropdown");
+        const arrow = document.getElementById("arrow");
+
+        // Toggle visibility
+        dropdown.classList.toggle("show");
+
+        // Toggle arrow direction
+        arrow.classList.toggle("rotate");
+    }
+
+    // Close dropdown if clicked outside
+    window.onclick = function(event) {
+        if (!event.target.matches('.language-button')) {
+            const dropdowns = document.getElementsByClassName("dropdown-content");
+            const arrow = document.getElementById("arrow");
+            for (let i = 0; i < dropdowns.length; i++) {
+                let openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                    arrow.classList.remove('rotate');
+                }
+            }
+        }
+    }
+</script>
+
+
+<div class="container">
 
     <div class="left-panel">
         <div class="logo-text-container">
@@ -16,7 +58,7 @@
         </div>
 
         <div class="instructions">
-            <p>Helping you to reach the truth that you already have inside you</p>
+            <p>{{ translations['title'] }}</p>
         </div>
     </div>
 
@@ -24,9 +66,9 @@
     <div class="right-panel">
         <nav class="navigation">
             <ul>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#tarot-readings">TAROT READINGS</a></li>
-                <li><a href="#important">IMPORTANT</a></li>
+                <li><a href="#services">{{ translations['services']['services'] }}</a></li>
+                <li><a href="#tarot-readings">{{ translations['services']['tarot-readings'] }}</a></li>
+                <li><a href="#important">{{ translations['services']['important'] }}</a></li>
             </ul>
         </nav>
 
@@ -44,19 +86,19 @@
 
 <div id="services" class="services-section">
     <div class="header">
-        <h1>SERVICES</h1>
+        <h1>{{ translations['services']['services'] }}</h1>
     </div>
 
     <div class="services-buttons">
-        <a href="#tarot-readings" class="service-btn">TAROT READINGS</a>
-        <a href="#video-call" class="service-btn">VIDEO CALL</a>
-        <a href="#your-questions" class="service-btn">YOUR QUESTIONS</a>
-        <a href="#quick-message" class="service-btn">QUICK MESSAGE</a>
-        <a href="#compatibility-astro" class="service-btn">COMPATIBILITY ASTRO</a>
+        <a href="#tarot-readings" class="service-btn">{{ translations['services']['tarot-readings'] }}</a>
+        <a href="#video-call" class="service-btn">{{ translations['services']['video-call'] }}</a>
+        <a href="#your-questions" class="service-btn">{{ translations['services']['your-questions'] }}</a>
+        <a href="#quick-message" class="service-btn">{{ translations['services']['quick-message'] }}</a>
+        <a href="#compatibility-astro" class="service-btn">{{ translations['services']['compatibility-astro'] }}</a>
     </div>
 
     <div class="instructions">
-        <p>Choose an option you prefer and text me in Telegram or WhatsApp</p>
+        <p>{{ translations['services']['description'] }}</p>
     </div>
 
     <div class="contact-icons">
@@ -73,33 +115,33 @@
 
 <div class="tarot-reading-section">
     <div id="tarot-readings" class="header">
-        <h1>TAROT READINGS</h1>
+        <h1>{{ translations['services']['tarot-readings'] }}</h1>
     </div>
 
     <!--- 1 General --->
     <div id="tarot-reading-1" class="tarot-reading-tab" style="background-image: url('../static/background.jpg');">
         <div class="gold-header">
-            <h2>| General |</h2>
-            <h2>WHAT'S COMING SOON</h2>
-            <h2>during: 1 week/1/2/3 months<br><br></h2>
+            <h2>{{ translations['nav-tarot-readings']['general']['title1'] }}</h2>
+            <h2>{{ translations['nav-tarot-readings']['general']['title2'] }}</h2>
+            <h2>{{ translations['nav-tarot-readings']['general']['title3'] }}<br><br></h2>
         </div>
 
         <div class="instructions">
             <ol>
-                <li>How your Reality will look like during this period in general</li>
-                <li>What this period is favourable for</li>
-                <li>Important situations and changes</li>
+                <li>{{ translations['nav-tarot-readings']['general']['1'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['general']['2'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['general']['3'] }}</li>
             </ol>
-            <p>+ 2 questions from you</p>
-            <p>for example</p>
+            <p>{{ translations['nav-tarot-readings']['general']['4'] }}</p>
+            <p>{{ translations['nav-tarot-readings']['general']['5'] }}</p>
             <ul>
-                <li>How will my relationships with *name* change during this time?</li>
-                <li>How will my financial situation look like?</li>
+                <li>{{ translations['nav-tarot-readings']['general']['6'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['general']['7'] }}</li>
             </ul>
         </div>
 
         <div class="gold-header">
-            <h2>$25 (usd)</h2>
+            <h2>{{ translations['nav-tarot-readings']['general']['price'] }}</h2>
         </div>
     </div>
 
@@ -107,23 +149,23 @@
     <!--- 2 Your In Search of Harmony --->
     <div id="tarot-reading-2" class="tarot-reading-tab" style="background-image: url('../static/background.jpg');">
         <div class="gold-header">
-            <h2>| In Search of Harmony |</h2>
-            <h2>HOW TO IMPROVE YOUR REALITY</h2>
-            <h2>for those who feel lost<br><br></h2>
+            <h2>{{ translations['nav-tarot-readings']['harmony']['title1'] }}</h2>
+            <h2>{{ translations['nav-tarot-readings']['harmony']['title2'] }}</h2>
+            <h2>{{ translations['nav-tarot-readings']['harmony']['title3'] }}<br><br></h2>
         </div>
 
         <div class="instructions">
             <ol>
-                <li>How your reality looks like now</li>
-                <li>What the reason of your current mental state is</li>
-                <li>What can make you feel better</li>
-                <li>How the best option of your reality looks like</li>
-                <li>What you should do to start living the best option of reality</li>
+                <li>{{ translations['nav-tarot-readings']['harmony']['1'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['harmony']['2'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['harmony']['3'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['harmony']['4'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['harmony']['5'] }}</li>
             </ol>
         </div>
 
         <div class="gold-header">
-            <h2>$25 (usd)</h2>
+            <h2>{{ translations['nav-tarot-readings']['harmony']['price'] }}</h2>
         </div>
     </div>
 
@@ -131,23 +173,23 @@
     <!--- 3 Your Strength --->
     <div id="tarot-reading-3" class="tarot-reading-tab" style="background-image: url('../static/background.jpg');">
         <div class="gold-header">
-            <h2>| Your Strength |</h2>
-            <h2>WHAT ARE YOUR STRENGTHS</h2>
-            <h2>hidden talents and skills<br><br></h2>
+            <h2>{{ translations['nav-tarot-readings']['strength']['title1'] }}</h2>
+            <h2>{{ translations['nav-tarot-readings']['strength']['title2'] }}</h2>
+            <h2>{{ translations['nav-tarot-readings']['strength']['title3'] }}<br><br></h2>
         </div>
 
         <div class="instructions">
             <ol>
-                <li>What your energy is right now</li>
-                <li>Your biggest strength in general</li>
-                <li>Which skills will help you the most on your current life path</li>
-                <li>Your hidden talents/skills</li>
-                <li>What you can achieve developing them </li>
+                <li>{{ translations['nav-tarot-readings']['strength']['1'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['strength']['2'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['strength']['3'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['strength']['4'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['strength']['5'] }}</li>
             </ol>
         </div>
 
         <div class="gold-header">
-            <h2>$25 (usd)</h2>
+            <h2>{{ translations['nav-tarot-readings']['strength']['price'] }}</h2>
         </div>
     </div>
 
@@ -155,22 +197,22 @@
     <!--- 4 Finance --->
     <div id="tarot-reading-4" class="tarot-reading-tab" style="background-image: url('../static/background.jpg');">
         <div class="gold-header">
-            <h2>| Finance |</h2>
-            <h2>HOW TO IMPROVE YOUR FINANCIAL SITUATION<br><br></h2>
+            <h2>{{ translations['nav-tarot-readings']['finance']['title1'] }}</h2>
+            <h2>{{ translations['nav-tarot-readings']['finance']['title2'] }}<br><br></h2>
         </div>
 
         <div class="instructions">
             <ol>
-                <li>Current financial situation </li>
-                <li>What your main mental blocks are that don’t let you improve your financial situation</li>
-                <li>External factors that negatively affect your financial situation</li>
-                <li>What can help you to attract money into your life </li>
-                <li>How huge can be the difference in your financial situation when you start working on it</li>
+                <li>{{ translations['nav-tarot-readings']['finance']['1'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['finance']['2'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['finance']['3'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['finance']['4'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['finance']['5'] }}</li>
             </ol>
         </div>
 
         <div class="gold-header">
-            <h2>$25 (usd)</h2>
+            <h2>{{ translations['nav-tarot-readings']['finance']['price'] }}</h2>
         </div>
     </div>
 
@@ -178,23 +220,23 @@
     <!--- 5 Love --->
     <div id="tarot-reading-5" class="tarot-reading-tab" style="background-image: url('../static/background.jpg');">
         <div class="gold-header">
-            <h2>| Love |</h2>
-            <h2>NEW PARTNER</h2>
-            <h2>Checking your compatibility with a person you know<br><br></h2>
+            <h2>{{ translations['nav-tarot-readings']['love1']['title1'] }}</h2>
+            <h2>{{ translations['nav-tarot-readings']['love1']['title2'] }}</h2>
+            <h2>{{ translations['nav-tarot-readings']['love1']['title3'] }}<br><br></h2>
         </div>
 
         <div class="instructions">
             <ol>
-                <li>His personality. what you should know about him</li>
-                <li>What he feels to you </li>
-                <li>How he sees you and your relationship now </li>
-                <li>Why this person appeared in your life(what your karmic lessons are)</li>
-                <li>How your relationships will be developing</li>
+                <li>{{ translations['nav-tarot-readings']['love1']['1'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['love1']['2'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['love1']['3'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['love1']['4'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['love1']['5'] }}</li>
             </ol>
         </div>
 
         <div class="gold-header">
-            <h2>$25 (usd)</h2>
+            <h2>{{ translations['nav-tarot-readings']['love1']['price'] }}</h2>
         </div>
     </div>
 
@@ -208,23 +250,23 @@
     <!--- 6 Love --->
     <div id="tarot-reading-6" class="tarot-reading-tab" style="background-image: url('../static/background.jpg');">
         <div class="gold-header">
-            <h2>| Love |</h2>
-            <h2>YOUR CURRENT RELATIONSHIPS</h2>
-            <h2>if there are any misunderstandings between you<br><br></h2>
+            <h2>{{ translations['nav-tarot-readings']['love2']['title1'] }}</h2>
+            <h2>{{ translations['nav-tarot-readings']['love2']['title2'] }}</h2>
+            <h2>{{ translations['nav-tarot-readings']['love2']['title3'] }}<br><br></h2>
         </div>
 
         <div class="instructions">
             <ol>
-                <li>The situation in your couple right now</li>
-                <li>His intentions towards you</li>
-                <li>The real reason of your problems and misunderstandings</li>
-                <li>What you can do to make the situation better</li>
-                <li>What this person will bring to you and how your relationships will be developing</li>
+                <li>{{ translations['nav-tarot-readings']['love2']['1'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['love2']['2'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['love2']['3'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['love2']['4'] }}</li>
+                <li>{{ translations['nav-tarot-readings']['love2']['5'] }}</li>
             </ol>
         </div>
 
         <div class="gold-header">
-            <h2>$30 (usd)</h2>
+            <h2>{{ translations['nav-tarot-readings']['love2']['price'] }}</h2>
         </div>
     </div>
 </div>
@@ -233,29 +275,23 @@
 
 <div class="ordinary-panel">
     <div id="video-call" class="header">
-        <h1>VIDEO CALL</h1>
+        <h1>{{ translations['services']['video-call'] }}</h1>
     </div>
     <div class="header">
-        <h2>ONE HOUR OF VIDEOCALL = UNLIMITED AMOUNT OF QUESTIONS</h2>
+        <h2>{{ translations['nav-video-call']['title'] }}</h2>
     </div>
 
     <div class="instructions">
         <p>
-            Videocall is a perfect format for those who feel the need to speak up about their situation,
-            since it gives you the opportunity
-            to ask way more questions than you have prepared, as
-            they will be appearing during the talk. I am interested
-            in helping you to leave satisfied and get the answers on
-            your questions.
+            {{ translations['nav-video-call']['1'] }}
         </p>
         <p>
-            I recommend you to prepare your questions beforehand and
-            message me describing your situation, so we can save our time
+            {{ translations['nav-video-call']['2'] }}
         </p>
     </div>
 
     <div class="gold-header">
-        <h2>$70 (usd)</h2>
+        <h2>{{ translations['nav-video-call']['price'] }}</h2>
     </div>
 </div>
 
@@ -263,22 +299,22 @@
 
 <div id="your-questions" class="ordinary-panel" style="background-image: url('../static/questions_background.png');">
     <div class="header">
-        <h1>YOUR QUESTIONS</h1>
+        <h1>{{ translations['services']['your-questions'] }}</h1>
     </div>
 
     <div class="question-container">
         <div class="left-question-panel">
             <div class="header">
-                <h2>One Question from You</h2>
+                <h2>{{ translations['nav-your-questions']['title1'] }}</h2>
             </div>
             <div class="gold-header">
-                <h2>$5 (usd)</h2>
+                <h2>{{ translations['nav-your-questions']['price'] }}</h2>
             </div>
         </div>
 
         <div class="right-question-panel">
             <div class="header">
-                <h2>Minimum 3 Questions</h2>
+                <h2>{{ translations['nav-your-questions']['title2'] }}</h2>
             </div>
         </div>
     </div>
@@ -287,12 +323,12 @@
     <div class="instructions-navigation">
         <nav class="navigation">
             <ul>
-                <li><a href="#important">IMPORTANT</a></li>
+                <li><a href="#important">{{ translations['services']['important'] }}</a></li>
             </ul>
         </nav>
 
         <div class="instructions">
-            <p>Please read more information here<br>(what types of questions I don’t work with & what information I need from you)</p>
+            <p>{{ translations['nav-your-questions']['suggestion'] | safe }}</p>
         </div>
     </div>
 </div>
@@ -303,19 +339,19 @@
     <div class="message-container">
         <div class="left-message-panel">
             <div class="header">
-                <h1>MESSAGE FOR YOU</h1>
+                <h1>{{ translations['services']['quick-message'] }}</h1>
             </div>
             <div class="header">
-                <h2>Something you should know on your current life path</h2>
+                <h2>{{ translations['nav-quick-message']['title'] }}</h2>
             </div>
 
             <div class="instructions">
-                <p>One Card – a message from your Higher Self<br><br>One Card – a message from Higher Powers</p>
-                <p><br>From 5 to 10 minutes voice message from me</p>
+                <p>{{ translations['nav-quick-message']['1'] | safe }}</p>
+                <p><br>{{ translations['nav-quick-message']['2'] }}</p>
             </div>
 
             <div class="gold-header">
-                <h2>18$ (usd)</h2>
+                <h2>{{ translations['nav-quick-message']['price'] }}</h2>
             </div>
         </div>
 
@@ -334,15 +370,14 @@
         <div class="left-compatibility-astro-panel" >
             <div class="compatibility-astro-background">
                 <div class="astrology-header">
-                    <h1>SYNASTRY: ASTROLOGY</h1>
+                    <h1>{{ translations['nav-compatibility-astro1']['title1'] }}</h1>
                 </div>
                 <div class="astrology-header">
-                    <h2>Checking a compatibility with your partner using your astrological charts
-                        (date of birth, exact place of birth and exact time of birth needed)</h2>
+                    <h2>{{ translations['nav-compatibility-astro1']['title2'] }}</h2>
                 </div>
 
                 <div class="gold-header">
-                    <h2>$70 (usd)</h2>
+                    <h2>{{ translations['nav-compatibility-astro1']['price'] }}</h2>
                 </div>
             </div>
         </div>
@@ -350,19 +385,17 @@
         <div class="right-compatibility-astro-panel">
             <div class="compatibility-astro-text-background">
                 <div class="gold-header">
-                    <h2>WHAT YOU GET:</h2>
+                    <h2>{{ translations['nav-compatibility-astro1']['instruction'] }}</h2>
                 </div>
 
                 <div class="astrology-list">
                     <ul>
-                        <li>analysis of two natal charts: needs, interests
-                            and values that each of you have, what type of partner you
-                            like and what type of partner you choose to marry</li>
-                        <li>checking a compatibility: what you have in common (which statements, interests, values you have the same), and what your differences are</li>
-                        <li>which spheres of life you “highlight” for each other and how it happens</li>
-                        <li>describing the way you change around your partner and the way your partner changes around you</li>
+                        <li>{{ translations['nav-compatibility-astro1']['1'] }}</li>
+                        <li>{{ translations['nav-compatibility-astro1']['2'] }}</li>
+                        <li>{{ translations['nav-compatibility-astro1']['3'] }}</li>
+                        <li>{{ translations['nav-compatibility-astro1']['4'] }}</li>
                     </ul>
-                    <p>Format: PDF file</p>
+                    <p>{{ translations['nav-compatibility-astro1']['format'] }}</p>
                 </div>
             </div>
         </div>
@@ -372,11 +405,11 @@
         <div class="left-compatibility-astro-panel">
             <div class="compatibility-astro-background">
                 <div class="astrology-header">
-                    <h1>SYNASTRY: ASTROLOGY<br>premium</h1>
+                    <h1>{{ translations['nav-compatibility-astro2']['title1'] | safe }}</h1>
                 </div>
 
                 <div class="gold-header">
-                    <h2>90$ (usd)</h2>
+                    <h2>{{ translations['nav-compatibility-astro2']['price'] }}</h2>
                 </div>
             </div>
         </div>
@@ -384,16 +417,16 @@
         <div class="right-compatibility-astro-panel">
             <div class="compatibility-astro-text-background">
                 <div class="gold-header">
-                    <h2>WHAT YOU GET:</h2>
+                    <h2>{{ translations['nav-compatibility-astro2']['instruction'] }}</h2>
                 </div>
 
                 <div class="astrology-list">
                     <ul>
-                        <li>everything that is included in Standard Synastry</li>
-                        <li>karmic lessons in your couple: how you were connected in your past lives and what impact it has on you now</li>
-                        <li>the reason you have met in this life (which scenarios you must go through together and why)</li>
+                        <li>{{ translations['nav-compatibility-astro2']['1'] }}</li>
+                        <li>{{ translations['nav-compatibility-astro2']['2'] }}</li>
+                        <li>{{ translations['nav-compatibility-astro2']['3'] }}</li>
                     </ul>
-                    <p>Format: PDF file</p>
+                    <p>{{ translations['nav-compatibility-astro2']['format'] }}</p>
                 </div>
             </div>
         </div>
@@ -404,36 +437,36 @@
 
 <div id="important" class="important-panel">
     <div class="header">
-        <h1>IMPORTANT</h1>
+        <h1>{{ translations['services']['important'] }}</h1>
     </div>
 
     <div class="gold-header">
-        <h2>TYPES OF QUESTIONS I DON’T WORK WITH:</h2>
+        <h2>{{ translations['nav-important']['disclaimer'] }}</h2>
     </div>
 
     <div class="instructions">
         <ul>
-            <li>HEALTH</li>
-            <li>CHILDREN</li>
-            <li>YES/NO</li>
-            <li>"WHEN?"</li>
+            <li>{{ translations['nav-important']['1'] }}</li>
+            <li>{{ translations['nav-important']['2'] }}</li>
+            <li>{{ translations['nav-important']['3'] }}</li>
+            <li>{{ translations['nav-important']['4'] }}</li>
         </ul>
     </div>
 
     <div class="gold-header">
-        <h2>WHAT INFORMATION I NEED FROM YOU:</h2>
+        <h2>{{ translations['nav-important']['input'] }}</h2>
     </div>
 
     <div class="instructions">
         <ul>
-            <li>DATE OF BIRTH</li>
-            <li>PHOTO</li>
-            <li>DESCRIPTION OF THE SITUATION</li>
+            <li>{{ translations['nav-important']['input1'] }}</li>
+            <li>{{ translations['nav-important']['input2'] }}</li>
+            <li>{{ translations['nav-important']['input3'] }}</li>
         </ul>
     </div>
 
     <div class="order">
-        <p>TO ORDER:</p>
+        <p>{{ translations['nav-important']['order'] }}</p>
         <div class="social-media">
             <a href="https://t.me/sixamprincess" target="_blank"><img src="../static/telegram.svg" alt="Telegram"></a>
             <a href="https://wa.me/qr/Q5FSEMNWBPYWH1" target="_blank"><img src="../static/whatsapp.svg" alt="WhatsApp"></a>
@@ -447,20 +480,11 @@
     <div class="conclusion-panel">
         <div class="conclusion-background">
             <div class="instructions">
-                <p>
-                    There are multiple options of future, not just one.
-                    Thanks to Tarot we can see what’s most likely going
-                    to happen and we can get some guidance on how to
-                    get to Reality that we want.
-                </p>
-                <p>
-                    All of the answers are already inside you: this is
-                    basically a work with your subconscious. I help you
-                    to understand yourself and the situation better.
-                </p>
+                <p>{{ translations['nav-conclusion']['1'] }}</p>
+                <p>{{ translations['nav-conclusion']['2'] }}</p>
 
                 <div class="the-end">
-                    <h1>YOU ARE THE CREATOR OF YOUR LIFE</h1>
+                    <h1>{{ translations['nav-conclusion']['the-end'] }}</h1>
                 </div>
             </div>
         </div>

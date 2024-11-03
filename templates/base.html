@@ -12,6 +12,23 @@
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Rochester&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../static/styles.css">
+
+        <script>
+            function toggleDropdown() {
+                const dropdown = document.getElementById("languageDropdown");
+                dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+            }
+
+            // Close dropdown if clicked outside
+            window.onclick = function(event) {
+                if (!event.target.matches('.language-button')) {
+                    const dropdowns = document.getElementsByClassName("dropdown-content");
+                    for (let i = 0; i < dropdowns.length; i++) {
+                        dropdowns[i].style.display = "none";
+                    }
+                }
+            };
+        </script>
     </head>
 
     <body>
