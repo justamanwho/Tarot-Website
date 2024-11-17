@@ -2,49 +2,32 @@
 
 {% block content %}
 
-<!-- Fixed Language Button Dropdown -->
-<div class="language-selector">
-    <button class="language-button" onclick="toggleDropdown()">
-        {{ language_options[lang].name }} <span id="arrow" class="arrow">▼</span>
-    </button>
-    <div id="languageDropdown" class="dropdown-content">
-        {% for code, language in language_options.items() %}
-            {% if code != lang %}
-                <a href="{{ url_for('set_language', lang_code=code) }}">
-                    {{ language.name }}
-                </a>
-            {% endif %}
-        {% endfor %}
-    </div>
+<!-- Language Selecting from Dropdown List -->
+<!--<div class="language-selector">-->
+<!--    <button class="language-button" onclick="toggleDropdown()">-->
+<!--        {{ language_options[lang].name }} <span id="arrow" class="arrow">▼</span>-->
+<!--    </button>-->
+<!--    <div id="languageDropdown" class="dropdown-content">-->
+<!--        {% for code, language in language_options.items() %}-->
+<!--            {% if code != lang %}-->
+<!--                <a href="{{ url_for('set_language', lang_code=code) }}">-->
+<!--                    {{ language.name }}-->
+<!--                </a>-->
+<!--            {% endif %}-->
+<!--        {% endfor %}-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<div class="language-container">
+    {% for code, option in language_options.items() %}
+    <form action="{{ url_for('set_language', lang_code=code) }}" method="get">
+        <button class="button-80 {% if lang == code %}active{% endif %}" role="button">
+            {{ option.name }}
+        </button>
+    </form>
+    {% endfor %}
 </div>
-
-<script>
-    function toggleDropdown() {
-        const dropdown = document.getElementById("languageDropdown");
-        const arrow = document.getElementById("arrow");
-
-        // Toggle visibility
-        dropdown.classList.toggle("show");
-
-        // Toggle arrow direction
-        arrow.classList.toggle("rotate");
-    }
-
-    // Close dropdown if clicked outside
-    window.onclick = function(event) {
-        if (!event.target.matches('.language-button')) {
-            const dropdowns = document.getElementsByClassName("dropdown-content");
-            const arrow = document.getElementById("arrow");
-            for (let i = 0; i < dropdowns.length; i++) {
-                let openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                    arrow.classList.remove('rotate');
-                }
-            }
-        }
-    }
-</script>
 
 
 <div class="container">
@@ -70,6 +53,7 @@
                 <li><a href="#tarot-readings">{{ translations['services']['tarot-readings'] }}</a></li>
                 <li><a href="#important">{{ translations['services']['important'] }}</a></li>
             </ul>
+
         </nav>
 
         <div class="social-media">

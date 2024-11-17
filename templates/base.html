@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ lang }}">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,22 +13,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Rochester&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../static/styles.css">
 
-        <script>
-            function toggleDropdown() {
-                const dropdown = document.getElementById("languageDropdown");
-                dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
-            }
-
-            // Close dropdown if clicked outside
-            window.onclick = function(event) {
-                if (!event.target.matches('.language-button')) {
-                    const dropdowns = document.getElementsByClassName("dropdown-content");
-                    for (let i = 0; i < dropdowns.length; i++) {
-                        dropdowns[i].style.display = "none";
-                    }
-                }
-            };
-        </script>
     </head>
 
     <body>
