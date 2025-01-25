@@ -10,16 +10,17 @@ app.secret_key = os.getenv('SECRET_KEY')
 
 
 LANGUAGE_OPTIONS = {
-    'ukr': {'name': 'Українська'},
     'en': {'name': 'English'},
-    'pl': {'name': 'Polski'}
+    'pl': {'name': 'Polski'},
+    'ukr': {'name': 'Українська'},
+    'ru': {'name': 'Русский'}
 }
 
 
 def load_translations(lang_code):
     file_path = f"translations/{lang_code}.json"
     if not os.path.exists(file_path):
-        file_path = "translations/ukr.json"  # Default to English if file missing
+        file_path = "translations/en.json"  # Default to English if file missing
     with open(file_path, 'r', encoding='utf-8') as f:  # Specify UTF-8 encoding here
         return json.load(f)
 
@@ -27,7 +28,7 @@ def load_translations(lang_code):
 @app.route('/')
 def index():
     if 'lang' not in session:
-        session['lang'] = 'ukr'
+        session['lang'] = 'en'
 
     translations = load_translations(session['lang'])
     max_length = max(len(option['name']) for option in LANGUAGE_OPTIONS.values())

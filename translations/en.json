@@ -5,16 +5,58 @@
       "services": "SERVICES",
       "tarot-readings": "TAROT READINGS",
       "important":  "IMPORTANT",
-      "video-call": "VIDEO CALL",
+      "consultation": "CONSULTATION",
       "your-questions": "YOUR QUESTIONS",
       "quick-message": "QUICK MESSAGE",
       "compatibility-astro": "COMPATIBILITY ASTRO",
+      "about-me": "ABOUT ME",
+      "formats": "FORMATS",
+      "types-of-requests": "TYPES OF REQUESTS",
+      "2025": "TAROT READINGS OF YEAR 2025  -20% OFF",
       "description": "Choose an option you prefer and text me in Telegram or WhatsApp"
   },
 
   "nav-language": {
     "title": "Services are available in"
   },
+
+  "nav-types-of-requests": {
+    "header": "TYPES OF REQUESTS",
+    "description": "for mini analyses",
+    "title1": "situation analysis",
+    "1": "for example,\nwhy is he acting this way with me/\nwhy did I lose clients/\nwhy did this situation happen to me",
+    "title2": "dream analysis",
+    "2": "the reason for this dream, its purpose\n(possibly a warning or guidance),\nadvice",
+    "title3": "message for you",
+    "3": "what you need to hear, a message from higher powers,\nhigher self, guidance",
+    "4": "please note that a mini analysis includes approximately\nanswers to one request. For more detailed analyses,\nchoose another service"
+  },
+
+  "nav-formats": {
+    "header": "FORMATS",
+    "title1": "MINI SITUATION ANALYSIS",
+    "1": "up to 3 answers",
+    "price1": "$27 (usd)",
+    "title2": "1 or 2 REQUESTS",
+    "2": "from 7 to 10 answers",
+    "price2": "$55 (usd)",
+    "title3": "CONSULTATION",
+    "3": "* unlimited number of questions for 1.5 hours, with a discussion of the situation",
+    "price3": "$90 (usd)",
+    "notice": "a free diagnostic of your request via correspondence is required before the consultation"
+  },
+
+
+  "nav-about-me": {
+    "header": "About Me",
+    "text1": "I am Alina! Since 2021, I have been helping people find answers to their questions using such tools as:",
+    "1": "tarot cards",
+    "2": "my knowledge of astrology and psychology",
+    "3": "my intuitive knowledge",
+    "4": "my experience",
+    "text2": "You can get to know me better through my Instagram and my Telegram channel, which I run in a lifestyle format."
+  },
+
 
   "nav-tarot-readings": {
     "general": {
@@ -125,10 +167,9 @@
   },
   "nav-important": {
     "disclaimer": "TYPES OF QUESTIONS I DON’T WORK WITH:",
-    "1": "HEALTH",
+    "1": "PHYSICAL HEALTH",
     "2": "CHILDREN",
-    "3": "YES/NO",
-    "4": "\"WHEN?\"",
+    "3": "DETERIORATION AND ANYTHING THAT VIOLATES THE BOUNDARIES OF OTHERS",
     "input": "WHAT INFORMATION I NEED FROM YOU:",
     "input1": "DATE OF BIRTH",
     "input2": "PHOTO",
@@ -138,6 +179,6 @@
   "nav-conclusion": {
     "1": "There are multiple options of future, not just one. Thanks to Tarot we can see what’s most likely going to happen and we can get some guidance on how to get to Reality that we want.",
     "2": "All of the answers are already inside you: this is basically a work with your subconscious. I help you to understand yourself and the situation better.",
-    "the-end": "YOU ARE THE CREATOR OF YOUR LIFE"
+    "the-end": "YOU ARE THE CREATOR OF YOUR REALITY"
   }
 }

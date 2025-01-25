@@ -1,5 +1,5 @@
-# alina-kostiuk
-The Personal Website Of My Big Sis
+# alina tarot
+The Website About Tarot Reading Services
 
 
                      Links
@@ -30,3 +30,18 @@ My Services:
 - Your questions
 - Quick message
 - Compatibility astro
+
+
+
+
+about me before tarot reading section
+tik tok how to set a website link
+
+- remove synastry astrology +
+- remove quick message +
+- remove background for 'your questions' +
+- change video call as Консультація +
+
+
+творець своєї реальності
+

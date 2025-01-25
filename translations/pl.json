@@ -5,15 +5,55 @@
       "services": "USŁUGI",
       "tarot-readings": "WRÓŻBY TAROTA",
       "important": "WAŻNE",
-      "video-call": "WIDEO ROZMOWA",
+      "consultation": "KONSULTACJA",
       "your-questions": "TWOJE PYTANIA",
       "quick-message": "SZYBKA WIADOMOŚĆ",
       "compatibility-astro": "KOMPATYBILNOŚĆ ASTRO",
+      "about-me": "O MNIE",
+      "formats": "FORMATY",
+      "types-of-requests": "RODZAJE ZAPYTAŃ",
+      "2025": "TAROT NA ROK 2025 -20% TANIEJ",
       "description": "Wybierz preferowaną opcję i napisz do mnie na Telegramie lub WhatsAppie"
   },
 
   "nav-language": {
     "title": "Usługi dostępne w"
+  },
+
+  "nav-types-of-requests": {
+    "header": "PRZYKŁADY ZAPYTAŃ",
+    "description": "dla mini analiz",
+    "title1": "analiza sytuacji",
+    "1": "na przykład,\ndlaczego on tak się zachowuje wobec mnie/\ndlaczego straciłem klientów/\ndlaczego ta sytuacja mi się przydarzyła",
+    "title2": "analiza snu",
+    "2": "przyczyna tego snu, jego cel\n(może to ostrzeżenie lub wskazówka),\nrada",
+    "title3": "wiadomość dla ciebie",
+    "3": "co powinieneś usłyszeć, wiadomość od wyższych sił,\nwyższego ja, wskazówka",
+    "4": "zwróć uwagę, że mini analiza obejmuje\nodpowiedzi na jedno zapytanie. W przypadku\nbardziej szczegółowych analiz,\nwybierz inną usługę"
+  },
+
+  "nav-formats": {
+    "header": "FORMATY",
+    "title1": "MINI ANALIZA SYTUACJI",
+    "1": "do 3 odpowiedzi",
+    "price1": "$27 (usd)",
+    "title2": "1 lub 2 ZAPYTANIA",
+    "2": "od 7 do 10 odpowiedzi",
+    "price2": "$55 (usd)",
+    "title3": "KONSULTACJA",
+    "3": "* nieograniczona liczba pytań przez 1,5 godziny, z omówieniem sytuacji",
+    "price3": "$90 (usd)",
+    "notice": "przed konsultacją wymagane jest darmowe zdiagnozowanie twojego zapytania w korespondencji"
+  },
+
+  "nav-about-me": {
+    "header": "O mnie",
+    "text1": "Jestem Alina! Od 2021 roku pomagam ludziom znajdować odpowiedzi na ich pytania, używając takich narzędzi jak:",
+    "1": "karty tarota",
+    "2": "moja wiedza z zakresu astrologii i psychologii",
+    "3": "moja intuicyjna wiedza",
+    "4": "moje doświadczenie",
+    "text2": "Możesz lepiej mnie poznać przez mój Instagram i kanał Telegram, który prowadzę w formacie lifestyle."
   },
 
 
@@ -125,11 +165,10 @@
     "format": "Format: plik PDF"
   },
   "nav-important": {
-    "disclaimer": "TYPY PYTAŃ, Z KTÓRYMI NIE PRACUJĘ:",
-    "1": "ZDROWIE",
+    "disclaimer": "PYTANIA, Z KTÓRYMI NIE PRACUJĘ:",
+    "1": "FIZYCZNE ZDROWIE",
     "2": "DZIECI",
-    "3": "TAK/NIE",
-    "4": "\"KIEDY?\"",
+    "3": "RZUCANIE UROKU I CZEGOKOLWIEK INNEGO, CO NARUSZA GRANICE INNYCH",
     "input": "JAKIE INFORMACJE POTRZEBUJĘ OD CIEBIE:",
     "input1": "DATA URODZENIA",
     "input2": "ZDJĘCIE",
@@ -139,6 +178,6 @@
   "nav-conclusion": {
     "1": "Istnieje wiele opcji przyszłości, nie tylko jedna. Dzięki kartom można wyczuć różne możliwości, ale ich wynik zależy od twojego zachowania i działań. Dlatego twoja przyszłość jest w twoich rękach.",
     "2": "Moja interpretacja kart i analiza astrologiczna nie jest wyrocznią i absolutną prawdą. Ale mogę obiektywnie powiedzieć, co widzę i jakie możliwości masz przed sobą.",
-    "the-end": "JESTEŚ TWÓRCEM SWOJEGO ŻYCIA"
+    "the-end": "JESTEŚ TWÓRCEM SWOJEJ RZECZYWISTOŚĆI"
   }
 }

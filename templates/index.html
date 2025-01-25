@@ -41,7 +41,8 @@
         <nav class="navigation">
             <ul>
                 <li><a href="#services">{{ translations['services']['services'] }}</a></li>
-                <li><a href="#tarot-readings">{{ translations['services']['tarot-readings'] }}</a></li>
+<!--                <li><a href="#tarot-readings">{{ translations['services']['tarot-readings'] }}</a></li>-->
+                <li><a href="#about-me">{{ translations['services']['about-me'] }}</a></li>
                 <li><a href="#important">{{ translations['services']['important'] }}</a></li>
             </ul>
 
@@ -87,10 +88,10 @@
 
     <div class="services-buttons">
         <a href="#tarot-readings" class="service-btn">{{ translations['services']['tarot-readings'] }}</a>
-        <a href="#video-call" class="service-btn">{{ translations['services']['video-call'] }}</a>
+        <a href="#consultation" class="service-btn">{{ translations['services']['consultation'] }}</a>
         <a href="#your-questions" class="service-btn">{{ translations['services']['your-questions'] }}</a>
-        <a href="#quick-message" class="service-btn">{{ translations['services']['quick-message'] }}</a>
-        <a href="#compatibility-astro" class="service-btn">{{ translations['services']['compatibility-astro'] }}</a>
+<!--        <a href="#quick-message" class="service-btn">{{ translations['services']['quick-message'] }}</a>-->
+<!--        <a href="#compatibility-astro" class="service-btn">{{ translations['services']['compatibility-astro'] }}</a>-->
     </div>
 
     <div class="instructions">
@@ -107,6 +108,109 @@
     </div>
 </div>
 
+
+
+
+<div class="about-me-panel">
+    <div id="about-me" class="header">
+        <h1>{{ translations['nav-about-me']['header'] }}</h1>
+    </div>
+
+    <div class="instructions">
+        <p>
+            {{ translations['nav-about-me']['text1'] }}
+        </p>
+        <ul class="list-with-dashes">
+            <li>{{ translations['nav-about-me']['1'] }}</li>
+            <li>{{ translations['nav-about-me']['2'] }}</li>
+            <li>{{ translations['nav-about-me']['3'] }}</li>
+            <li>{{ translations['nav-about-me']['4'] }}</li>
+        </ul>
+        <p>
+            {{ translations['nav-about-me']['text2'] }}
+        </p>
+    </div>
+</div>
+
+
+
+
+<!--<div class="formats-section">-->
+<!--    <div class="header" id="formats">-->
+<!--        <h1>{{ translations['nav-formats']['header'] }}</h1>-->
+<!--    </div>-->
+
+<!--    <div class="formats-tab">-->
+<!--        <div class="format-item">-->
+<!--            <div class="circle-wrapper">-->
+<!--                <div class="circle">-->
+<!--                    <div class="double-oval">1</div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="details">-->
+<!--                <h2>{{ translations['nav-formats']['title1'] }}</h2>-->
+<!--                <p>{{ translations['nav-formats']['1'] }}</p>-->
+<!--                <h3>{{ translations['nav-formats']['price1'] }}</h3>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="format-item">-->
+<!--            <div class="circle-wrapper">-->
+<!--                <div class="circle">-->
+<!--                    <div class="double-oval">2</div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="details">-->
+<!--                <h2>{{ translations['nav-formats']['title2'] }}</h2>-->
+<!--                <p>{{ translations['nav-formats']['2'] }}</p>-->
+<!--                <h3>{{ translations['nav-formats']['price2'] }}</h3>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="format-item">-->
+<!--            <div class="circle-wrapper">-->
+<!--                <div class="circle">-->
+<!--                    <div class="double-oval">3</div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="details">-->
+<!--                <h2>{{ translations['nav-formats']['title3'] }}</h2>-->
+<!--                <p>{{ translations['nav-formats']['3'] }}</p>-->
+<!--                <h3>{{ translations['nav-formats']['price3'] }}</h3>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <p>{{ translations['nav-formats']['notice'] }}</p>-->
+<!--</div>-->
+
+
+<!--<div class="types-of-requests-section" id="types-of-requests">-->
+<!--    <div class="header">-->
+<!--        <h1>{{ translations['nav-types-of-requests']['header'] }}</h1>-->
+<!--    </div>-->
+
+<!--    <h3>{{ translations['nav-types-of-requests']['description'] }}</h3>-->
+
+<!--    <div class="request-type">-->
+<!--        <h2>{{ translations['nav-types-of-requests']['title1'] }}</h2>-->
+<!--        <p>{{ translations['nav-types-of-requests']['1'] }}</p>-->
+<!--    </div>-->
+
+<!--    <div class="request-type">-->
+<!--        <h2>{{ translations['nav-types-of-requests']['title2'] }}</h2>-->
+<!--        <p>{{ translations['nav-types-of-requests']['2'] }}</p>-->
+<!--    </div>-->
+
+<!--    <div class="request-type">-->
+<!--        <h2>{{ translations['nav-types-of-requests']['title3'] }}</h2>-->
+<!--        <p>{{ translations['nav-types-of-requests']['3'] }}</p>-->
+<!--        <p>{{ translations['nav-types-of-requests']['4'] }}</p>-->
+<!--    </div>-->
+
+<!--    <div class="note">-->
+<!--        <p>{{ translations['nav-types-of-requests']['note'] }}</p>-->
+<!--    </div>-->
+<!--</div>-->
 
 
 <div class="tarot-reading-section">
@@ -270,8 +374,8 @@
 
 
 <div class="ordinary-panel">
-    <div id="video-call" class="header">
-        <h1>{{ translations['services']['video-call'] }}</h1>
+    <div id="consultation" class="header">
+        <h1>{{ translations['services']['consultation'] }}</h1>
     </div>
     <div class="header">
         <h2>{{ translations['nav-video-call']['title'] }}</h2>
@@ -293,7 +397,7 @@
 
 
 
-<div id="your-questions" class="ordinary-panel" style="background-image: url('../static/questions_background.png');">
+<div id="your-questions" class="ordinary-panel">
     <div class="header">
         <h1>{{ translations['services']['your-questions'] }}</h1>
     </div>
@@ -331,103 +435,103 @@
 
 
 
-<div id="quick-message" class="ordinary-panel">
-    <div class="message-container">
-        <div class="left-message-panel">
-            <div class="header">
-                <h1>{{ translations['services']['quick-message'] }}</h1>
-            </div>
-            <div class="header">
-                <h2>{{ translations['nav-quick-message']['title'] }}</h2>
-            </div>
+<!--<div id="quick-message" class="ordinary-panel">-->
+<!--    <div class="message-container">-->
+<!--        <div class="left-message-panel">-->
+<!--            <div class="header">-->
+<!--                <h1>{{ translations['services']['quick-message'] }}</h1>-->
+<!--            </div>-->
+<!--            <div class="header">-->
+<!--                <h2>{{ translations['nav-quick-message']['title'] }}</h2>-->
+<!--            </div>-->
 
-            <div class="instructions">
-                <p>{{ translations['nav-quick-message']['1'] | safe }}</p>
-                <p><br>{{ translations['nav-quick-message']['2'] }}</p>
-            </div>
+<!--            <div class="instructions">-->
+<!--                <p>{{ translations['nav-quick-message']['1'] | safe }}</p>-->
+<!--                <p><br>{{ translations['nav-quick-message']['2'] }}</p>-->
+<!--            </div>-->
 
-            <div class="gold-header">
-                <h2>{{ translations['nav-quick-message']['price'] }}</h2>
-            </div>
-        </div>
-
-
-        <!--- Image of the Souls next to the pannel --->
-        <div class="right-message-panel">
-            <img src="../static/souls.png" alt="souls.png">
-        </div>
-    </div>
-</div>
+<!--            <div class="gold-header">-->
+<!--                <h2>{{ translations['nav-quick-message']['price'] }}</h2>-->
+<!--            </div>-->
+<!--        </div>-->
 
 
+<!--        &lt;!&ndash;- Image of the Souls next to the pannel -&ndash;&gt;-->
+<!--        <div class="right-message-panel">-->
+<!--            <img src="../static/souls.png" alt="souls.png">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
-<div id="compatibility-astro" class="compatibility-astro-panel">
-    <div class="compatibility-astro-container">
-        <div class="left-compatibility-astro-panel" >
-            <div class="compatibility-astro-background">
-                <div class="astrology-header">
-                    <h1>{{ translations['nav-compatibility-astro1']['title1'] }}</h1>
-                </div>
-                <div class="astrology-header">
-                    <h2>{{ translations['nav-compatibility-astro1']['title2'] }}</h2>
-                </div>
 
-                <div class="gold-header">
-                    <h2>{{ translations['nav-compatibility-astro1']['price'] }}</h2>
-                </div>
-            </div>
-        </div>
 
-        <div class="right-compatibility-astro-panel">
-            <div class="compatibility-astro-text-background">
-                <div class="gold-header">
-                    <h2>{{ translations['nav-compatibility-astro1']['instruction'] }}</h2>
-                </div>
+<!--<div id="compatibility-astro" class="compatibility-astro-panel">-->
+<!--    <div class="compatibility-astro-container">-->
+<!--        <div class="left-compatibility-astro-panel" >-->
+<!--            <div class="compatibility-astro-background">-->
+<!--                <div class="astrology-header">-->
+<!--                    <h1>{{ translations['nav-compatibility-astro1']['title1'] }}</h1>-->
+<!--                </div>-->
+<!--                <div class="astrology-header">-->
+<!--                    <h2>{{ translations['nav-compatibility-astro1']['title2'] }}</h2>-->
+<!--                </div>-->
 
-                <div class="astrology-list">
-                    <ul>
-                        <li>{{ translations['nav-compatibility-astro1']['1'] }}</li>
-                        <li>{{ translations['nav-compatibility-astro1']['2'] }}</li>
-                        <li>{{ translations['nav-compatibility-astro1']['3'] }}</li>
-                        <li>{{ translations['nav-compatibility-astro1']['4'] }}</li>
-                    </ul>
-                    <p>{{ translations['nav-compatibility-astro1']['format'] }}</p>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--                <div class="gold-header">-->
+<!--                    <h2>{{ translations['nav-compatibility-astro1']['price'] }}</h2>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
 
-    <div id="compatibility-astro-premium" class="compatibility-astro-container">
-        <div class="left-compatibility-astro-panel">
-            <div class="compatibility-astro-background">
-                <div class="astrology-header">
-                    <h1>{{ translations['nav-compatibility-astro2']['title1'] | safe }}</h1>
-                </div>
+<!--        <div class="right-compatibility-astro-panel">-->
+<!--            <div class="compatibility-astro-text-background">-->
+<!--                <div class="gold-header">-->
+<!--                    <h2>{{ translations['nav-compatibility-astro1']['instruction'] }}</h2>-->
+<!--                </div>-->
 
-                <div class="gold-header">
-                    <h2>{{ translations['nav-compatibility-astro2']['price'] }}</h2>
-                </div>
-            </div>
-        </div>
+<!--                <div class="astrology-list">-->
+<!--                    <ul>-->
+<!--                        <li>{{ translations['nav-compatibility-astro1']['1'] }}</li>-->
+<!--                        <li>{{ translations['nav-compatibility-astro1']['2'] }}</li>-->
+<!--                        <li>{{ translations['nav-compatibility-astro1']['3'] }}</li>-->
+<!--                        <li>{{ translations['nav-compatibility-astro1']['4'] }}</li>-->
+<!--                    </ul>-->
+<!--                    <p>{{ translations['nav-compatibility-astro1']['format'] }}</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
-        <div class="right-compatibility-astro-panel">
-            <div class="compatibility-astro-text-background">
-                <div class="gold-header">
-                    <h2>{{ translations['nav-compatibility-astro2']['instruction'] }}</h2>
-                </div>
+<!--    <div id="compatibility-astro-premium" class="compatibility-astro-container">-->
+<!--        <div class="left-compatibility-astro-panel">-->
+<!--            <div class="compatibility-astro-background">-->
+<!--                <div class="astrology-header">-->
+<!--                    <h1>{{ translations['nav-compatibility-astro2']['title1'] | safe }}</h1>-->
+<!--                </div>-->
 
-                <div class="astrology-list">
-                    <ul>
-                        <li>{{ translations['nav-compatibility-astro2']['1'] }}</li>
-                        <li>{{ translations['nav-compatibility-astro2']['2'] }}</li>
-                        <li>{{ translations['nav-compatibility-astro2']['3'] }}</li>
-                    </ul>
-                    <p>{{ translations['nav-compatibility-astro2']['format'] }}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!--                <div class="gold-header">-->
+<!--                    <h2>{{ translations['nav-compatibility-astro2']['price'] }}</h2>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="right-compatibility-astro-panel">-->
+<!--            <div class="compatibility-astro-text-background">-->
+<!--                <div class="gold-header">-->
+<!--                    <h2>{{ translations['nav-compatibility-astro2']['instruction'] }}</h2>-->
+<!--                </div>-->
+
+<!--                <div class="astrology-list">-->
+<!--                    <ul>-->
+<!--                        <li>{{ translations['nav-compatibility-astro2']['1'] }}</li>-->
+<!--                        <li>{{ translations['nav-compatibility-astro2']['2'] }}</li>-->
+<!--                        <li>{{ translations['nav-compatibility-astro2']['3'] }}</li>-->
+<!--                    </ul>-->
+<!--                    <p>{{ translations['nav-compatibility-astro2']['format'] }}</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
 
 
@@ -445,7 +549,6 @@
             <li>{{ translations['nav-important']['1'] }}</li>
             <li>{{ translations['nav-important']['2'] }}</li>
             <li>{{ translations['nav-important']['3'] }}</li>
-            <li>{{ translations['nav-important']['4'] }}</li>
         </ul>
     </div>
 

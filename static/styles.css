@@ -138,10 +138,6 @@ body {
 
 
 #your-questions {
-    background-image: url('../static/questions_background.png');
-    background-size: cover; /* Make the image cover the section */
-    background-repeat: no-repeat;
-    background-position: center;
     padding: 20px;
     border-radius: 10px;
     width: 100%;
@@ -161,7 +157,6 @@ body {
 #your-questions .gold-header {
     padding: 0;
     border-radius: 0;
-    background-color: transparent;
 }
 
 
@@ -299,7 +294,7 @@ body {
 
 
 .important-panel .gold-header {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: 20px 0;
 }
 
@@ -540,7 +535,7 @@ body {
 }
 
 .tarot-reading-tab {
-    width: calc(20% - 40px); /* Adjust width of each tab based on desired spacing */
+    width: calc(20% - 40px);
     margin: 10px;
     padding: 30px;
     text-align: center;
@@ -634,6 +629,8 @@ body {
     text-align: center;
     gap: 15px; /* Space between the left and right panels */
     height: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .language-container h1 {
@@ -671,6 +668,27 @@ body {
     color: #888; /* Subtle grey color */
     text-align: center; /* Center-align text */
 }
+
+
+.about-me-panel {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.list-with-dashes li {
+    list-style-type: none; /* Remove default bullets */
+    display: relative; /* Keep the hyphen next to the text */
+}
+
+.list-with-dashes li::before {
+    content: "- "; /* Add the hyphen and a space */
+    margin-right: 5px; /* Optional: adds a small space between the hyphen and the text */
+}
+
 
 
 /* Buttons */
@@ -881,6 +899,10 @@ body {
     .right-language-panel {
         padding-top: 0px; /* Optional padding for spacing */
         width: 90%; /* Adjust width proportionally */
+    }
+
+    .about-me-panel {
+        width: 80%;
     }
 
 }

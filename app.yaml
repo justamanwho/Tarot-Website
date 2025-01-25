@@ -1,14 +1,12 @@
-runtime: python
-env: flex
-entrypoint: gunicorn -b :$PORT main:app
+version: '3.8'
 
-runtime_config:
-  operating_system: "ubuntu22"
-
-manual_scaling:
-  instances: 1
-
-resources:
-  cpu: 1
-  memory_gb: 0.5
-  disk_size_gb: 30
+services:
+  web:
+    build: .
+    ports:
+      - "80:8000"
+    volumes:
+      - .:/app
+    environment:
+      SECRET_KEY: ${SECRET_KEY}
+    restart: always
