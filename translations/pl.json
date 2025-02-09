@@ -21,11 +21,20 @@
     "title": "Usługi dostępne w"
   },
 
+  "nav-about-me": {
+    "header": "O mnie",
+    "text1": "Jestem Alina! Od 2021 roku pomagam ludziom znajdować odpowiedzi na ich pytania, używając takich narzędzi jak:",
+    "1": "karty tarota",
+    "2": "moja wiedza z zakresu astrologii i psychologii",
+    "3": "moja intuicyjna wiedza",
+    "4": "moje doświadczenie",
+    "text2": "Możesz lepiej mnie poznać przez mój Instagram i kanał Telegram."
+  },
 
   "nav-tarot-session": {
-    "info": "to analiza Twojego zapytania, która odbywa się na Telegramie o wyznaczonej godzinie w formie wiadomości wideo.",
+    "info": "to analiza Twojego zapytania, która odbywa się na Telegramie o wyznaczonej godzinie.",
     "title": "JAK TO DZIAŁA?",
-    "1": "Przychodzisz z zapytaniem (przykłady tematów są poniżej) i opisujesz sytuację.",
+    "1": "Przychodzisz z zapytaniem i opisujesz sytuację.",
     "2": "Odpowiadam na Twoje pytania, rozwijam temat i utrzymuję interakcję przez całą sesję, aby omówić dodatkowe pytania i spostrzeżenia.",
     "3": "Pytania, które analizuję na kartach, są dobierane indywidualnie do Twojego zapytania."
   },
@@ -92,16 +101,6 @@
     "description3": "Do 1,5 godziny",
     "price3": "$88(CAD)",
     "notice": "Każda odpowiedź jest szczegółowa i wyczerpująca"
-  },
-
-  "nav-about-me": {
-    "header": "O mnie",
-    "text1": "Jestem Alina! Od 2021 roku pomagam ludziom znajdować odpowiedzi na ich pytania, używając takich narzędzi jak:",
-    "1": "karty tarota",
-    "2": "moja wiedza z zakresu astrologii i psychologii",
-    "3": "moja intuicyjna wiedza",
-    "4": "moje doświadczenie",
-    "text2": "Możesz lepiej mnie poznać przez mój Instagram i kanał Telegram, który prowadzę w formacie lifestyle."
   },
 
 

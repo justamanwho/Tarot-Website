@@ -21,11 +21,20 @@
     "title": "Services are available in"
   },
 
+  "nav-about-me": {
+    "header": "About Me",
+    "text1": "I am Alina! Since 2021, I have been helping people find answers to their questions using such tools as:",
+    "1": "tarot cards and oracle cards",
+    "2": "my knowledge of astrology and psychology",
+    "3": "my intuitive knowledge",
+    "4": "my experience",
+    "text2": "You can get to know me better through my Instagram and my Telegram channel"
+  },
 
   "nav-tarot-session": {
-    "info": "this is an analysis of your request, conducted on Telegram at the scheduled time in the format of video messages.",
+    "info": "this is an analysis of your request, conducted on Telegram at the scheduled time.",
     "title": "HOW DOES IT WORK?",
-    "1": "You come with a request (examples of topics are listed below) and describe the situation.",
+    "1": "You come with a request and describe the situation.",
     "2": "I provide answers, revealing your topic, and maintain interaction with you throughout the session to discuss your additional questions and insights.",
     "3": "The questions I analyze with the cards are selected individually based on your request."
   },
@@ -91,17 +100,6 @@
     "description3": "Up to 1.5 hours",
     "price3": "$88(CAD)",
     "notice": "Each answer is detailed and comprehensive"
-  },
-
-
-  "nav-about-me": {
-    "header": "About Me",
-    "text1": "I am Alina! Since 2021, I have been helping people find answers to their questions using such tools as:",
-    "1": "tarot cards",
-    "2": "my knowledge of astrology and psychology",
-    "3": "my intuitive knowledge",
-    "4": "my experience",
-    "text2": "You can get to know me better through my Instagram and my Telegram channel, which I run in a lifestyle format."
   },
 
 

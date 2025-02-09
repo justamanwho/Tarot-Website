@@ -724,7 +724,15 @@ body {
     margin-right: 5px; /* Optional: adds a small space between the hyphen and the text */
 }
 
+.tarot-reading-tab ul li {
+    margin-bottom: 10px; /* Adjust the space between list items */
+    padding-bottom: 5px; /* Optional: adds padding */
+    line-height: 1.8; /* Optional: increases line spacing */
+}
 
+a {
+    color: yellow; /* Changes the color of all links to yellow */
+}
 
 /* Buttons */
 

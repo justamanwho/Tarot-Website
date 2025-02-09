@@ -32,16 +32,3 @@ My Services:
 - Compatibility astro
 
 
-
-
-about me before tarot reading section
-tik tok how to set a website link
-
-- remove synastry astrology +
-- remove quick message +
-- remove background for 'your questions' +
-- change video call as Консультація +
-
-
-творець своєї реальності
-
