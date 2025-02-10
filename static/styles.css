@@ -734,6 +734,21 @@ a {
     color: yellow; /* Changes the color of all links to yellow */
 }
 
+.request-type h2 {
+    margin-bottom: 0px; /* Adjust this value to reduce the gap */
+}
+
+.request-type p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.request-type {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+
 /* Buttons */
 
 .button-80 {

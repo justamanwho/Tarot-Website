@@ -28,11 +28,11 @@
     "2": "my knowledge of astrology and psychology",
     "3": "my intuitive knowledge",
     "4": "my experience",
-    "text2": "You can get to know me better through my Instagram and my Telegram channel"
+    "text2": "You can get to know me better through my <a href=\"https://www.instagram.com/sixamprincess?igsh=MWw3Y2J4NWYyZ2xhYg%3D%3D&utm_source=qr\">Instagram</a> and my <a href=\"https://t.me/alinatarottherapy\">Telegram</a> channel "
   },
 
   "nav-tarot-session": {
-    "info": "this is an analysis of your request, conducted on Telegram at the scheduled time.",
+    "info": "is a conversation where I guide you through your request, providing insights and answers to your questions.",
     "title": "HOW DOES IT WORK?",
     "1": "You come with a request and describe the situation.",
     "2": "I provide answers, revealing your topic, and maintain interaction with you throughout the session to discuss your additional questions and insights.",
@@ -41,20 +41,20 @@
 
   "nav-types-of-requests-full": {
     "header": "EXAMPLES OF REQUESTS",
-    "description": "for comprehensive analyses",
+    "description": "full readings",
     "title1": "forecast for a specific period: up to 6 months",
-    "1": "energies, emotional state, material growth, romantic life, sources of joy, what to be cautious of, advice",
+    "1": "energies, emotional state, financial growth, romantic life, sources of joy, what to be cautious of, advice",
     "title2": "analysis of Your relationships",
     "2": "the impact of these relationships on Your life, development prospects, challenges, karma, important aspects, advice",
     "title3": "transformation",
-    "3": "what Your reality will look like if You... (for example, move to another city now), exploring how to transition harmoniously to a new stage",
+    "3": "what Your reality will look like if You... (for example, move to another city now), analysis and how to transition smoothly into a new stage",
     "title4": "self-help: self-discovery",
     "4": "true desires and needs, how to fulfill them, reasons behind Your emotional difficulties, how to support Yourself"
   },
 
   "nav-types-of-requests-mini": {
     "header": "TYPES OF REQUESTS",
-    "description": "for mini analyses",
+    "description": "mini readings",
     "title1": "situation analysis",
     "1": "for example,\nwhy is he acting this way with me/\nwhy did I lose clients/\nwhy did this situation happen to me",
     "title2": "dream analysis",
