@@ -21,6 +21,8 @@
     "title": "Usługi dostępne w"
   },
 
+  "discount": "-20% na wszystkie usługi do 1 kwiećnia (włącznie)",
+
   "nav-about-me": {
     "header": "O mnie",
     "text1": "Jestem Alina! Od 2021 roku pomagam ludziom znajdować odpowiedzi na ich pytania, używając takich narzędzi jak:",
@@ -91,7 +93,7 @@
   "nav-price": {
     "title": "CENNIK",
     "title1": "Pełna analiza jednego zapytania",
-    "description1": "Od 7 do 10 odpowiedzi",
+    "description1": "Do 8 odpowiedzi",
     "description11": "~ 1 godzina",
     "price1": "$55(CAD)",
     "title2": "Mini analiza sytuacji",
