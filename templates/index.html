@@ -48,11 +48,11 @@
     <div class="right-language-panel">
         <div class="button-container">
             {% for code, option in language_options.items() %}
-            <form action="{{ url_for('set_language', lang_code=code) }}" method="get">
-                <button class="button-80 {% if lang == code %}active{% endif %}" role="button">
-                    {{ option.name }}
-                </button>
-            </form>
+                <a href="{{ url_for('set_language', lang_code=code) }}">
+                    <button class="button-80 {% if lang == code %}active{% endif %}" role="button">
+                        {{ option.name }}
+                    </button>
+                </a>
             {% endfor %}
         </div>
 
