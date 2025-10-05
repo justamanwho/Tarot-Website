@@ -23,7 +23,7 @@ jobs:
           cd ${{ secrets.WORK_DIR }}
           git fetch origin ${{ secrets.MAIN_BRANCH }}
           git reset --hard origin/${{ secrets.MAIN_BRANCH }}
-          sudo systemctl restart the-world-bot
+          sudo systemctl restart alina-website
         EOF
 
     - name: Cleanup SSH
