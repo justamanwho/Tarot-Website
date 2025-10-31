@@ -45,7 +45,7 @@ def load_translations(lang_code):
     file_path = f"translations/{lang_code}.json"
     if not os.path.exists(file_path):
         # Default Language
-        file_path = "translations/ukr.json"
+        file_path = "translations/en.json"
 
     with open(file_path, 'r', encoding='utf-8') as f:
         return json.load(f)
@@ -55,7 +55,7 @@ def load_translations(lang_code):
 def index():
     if 'lang' not in session:
         # Default Language
-        session['lang'] = 'ukr'
+        session['lang'] = 'en'
 
     translations = load_translations(session['lang'])
     max_length = max(len(option['name']) for option in LANGUAGE_OPTIONS.values())
