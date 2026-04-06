@@ -1,10 +1,8 @@
-# Alina Website
+# Tarot Website
+A responsive website for a small tarot reading business, featuring service listings, pricing information, and a contact section.
 
-**Tarot Readings & Spiritual Guidance**  
 
----
-
-## 🔗 Links
+## Links
 
 - [Website](https://astrotaroelin.com)
 - [Telegram (Profile)](https://t.me/sixamprincess)
@@ -13,12 +11,6 @@
 - [Instagram](https://www.instagram.com/sixamprincess?igsh=MWw3Y2J4NWYyZ2xhYg%3D%3D&utm_source=qr)
 - [YouTube](https://www.youtube.com/@sixamprincess)
 
----
 
-## 🧾 Description
-
-Helping you uncover the truth you already carry inside.  
-Readings and guidance available in **Ukrainian**, **English**, **Polish**, and **Russian**.
-
-
-## 📋 To-Do List
+## To-Do List
+- make readme even better
